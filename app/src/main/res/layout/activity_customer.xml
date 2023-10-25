@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity.CustomerActivity">
+
+    <include
+        android:id="@+id/header_back"
+        layout="@layout/custom_header_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/txt_last_update"
+        android:textSize="12sp"
+        android:text="last update"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="40dp"
+        android:textColor="@color/darkblack"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="20dp">
+
+        <RelativeLayout
+            android:id="@+id/rl_Dashboard"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/search_button_design">
+
+            <ImageView
+                android:id="@+id/imgDashboard"
+                android:layout_width="40dp"
+                android:layout_height="match_parent"
+                android:padding="8dp"
+                android:src="@drawable/dashboard" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_toEndOf="@id/imgDashboard"
+                android:gravity="center_vertical"
+                android:paddingStart="10dp"
+                android:text="@string/dashboard"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_GhBilling"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_below="@id/rl_Dashboard"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/search_button_design">
+
+            <ImageView
+                android:id="@+id/imgGhBilling"
+                android:layout_width="40dp"
+                android:layout_height="match_parent"
+                android:padding="8dp"
+                android:src="@drawable/gh_billing" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_toEndOf="@id/imgGhBilling"
+                android:gravity="center_vertical"
+                android:paddingStart="10dp"
+                android:text="@string/gh_billing"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_DirectBilling"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_below="@id/rl_GhBilling"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/search_button_design">
+
+            <ImageView
+                android:id="@+id/imgDirectBilling"
+                android:layout_width="40dp"
+                android:layout_height="match_parent"
+                android:padding="8dp"
+                android:src="@drawable/direct_billing" />
+
+            <TextView
+                android:id="@+id/btn_GhBilling"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_toEndOf="@id/imgDirectBilling"
+                android:gravity="center_vertical"
+                android:paddingStart="10dp"
+                android:text="@string/direct_billing"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_PayNow"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_below="@id/rl_DirectBilling"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/search_button_design"
+            android:visibility="gone">
+
+            <ImageView
+                android:id="@+id/imgPayNow"
+                android:layout_width="40dp"
+                android:layout_height="match_parent"
+                android:padding="8dp"
+                android:src="@drawable/ic_pay_now_24" />
+
+            <TextView
+                android:id="@+id/btn_PayNow"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_toEndOf="@id/imgPayNow"
+                android:gravity="center_vertical"
+                android:paddingStart="10dp"
+                android:text="@string/pay_now"
+                android:textStyle="normal"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_ContactPerson"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_below="@id/rl_PayNow"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/search_button_design">
+
+            <ImageView
+                android:id="@+id/imgContactPerson"
+                android:layout_width="40dp"
+                android:layout_height="match_parent"
+                android:padding="8dp"
+                android:src="@drawable/contact_person" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_toEndOf="@id/imgContactPerson"
+                android:gravity="center_vertical"
+                android:paddingStart="10dp"
+                android:text="@string/contact_details"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_UserManagement"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:visibility="gone"
+            android:layout_below="@id/rl_ContactPerson"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/search_button_design">
+
+            <ImageView
+                android:id="@+id/imgUserManagement"
+                android:layout_width="40dp"
+                android:layout_height="match_parent"
+                android:padding="8dp"
+                android:src="@drawable/user_management" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_toEndOf="@id/imgUserManagement"
+                android:gravity="center_vertical"
+                android:paddingStart="10dp"
+                android:text="Order Form"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                tools:ignore="RtlSymmetry" />
+        </RelativeLayout>
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fab_custPort_log"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp"
+            android:src="@drawable/phone"
+            app:backgroundTint="@color/dark_green" />
+
+    </RelativeLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
+
+</layout>

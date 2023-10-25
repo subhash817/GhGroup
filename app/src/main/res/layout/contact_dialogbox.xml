@@ -1,0 +1,546 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="15dp">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_marginStart="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:text="GH Group Accounts Department"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:layout_margin="4dp"
+                android:padding="3dp"
+                android:textColor="@color/darkblack"
+                android:textStyle="bold"/>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:text="Portal Support :"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/darkblack"
+                    android:textSize="15sp"
+                    android:layout_margin="4dp"
+                    android:padding="3dp"/>
+
+                <TextView
+                    android:text="7888188688"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/dark_blue"
+                    android:textSize="15sp"
+                    android:textIsSelectable="true"
+                    android:drawableStart="@drawable/phonelink"
+                    android:layout_margin="4dp"
+                    android:padding="3dp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:text="Ahmedabad :"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/darkblack"
+                    android:textSize="15sp"
+                    android:layout_margin="4dp"
+                    android:padding="3dp"/>
+
+                <TextView
+                    android:text="9978683099, 9978683499"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/dark_blue"
+                    android:textIsSelectable="true"
+                    android:drawableStart="@drawable/phonelink"
+                    android:textSize="15sp"
+                    android:layout_margin="4dp"
+                    android:padding="3dp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:text="Amravati :"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/darkblack"
+                    android:textSize="15sp"
+                    android:layout_margin="4dp"
+                    android:padding="3dp"/>
+
+                <TextView
+                    android:text="7263921017"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/dark_blue"
+                    android:textIsSelectable="true"
+                    android:drawableStart="@drawable/phonelink"
+                    android:textSize="15sp"
+                    android:layout_margin="4dp"
+                    android:padding="3dp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:text="Bangalore :"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/darkblack"
+                    android:textSize="15sp"
+                    android:layout_margin="4dp"
+                    android:padding="3dp"/>
+
+                <TextView
+                    android:text="9513800299, 9513800047"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/dark_blue"
+                    android:textIsSelectable="true"
+                    android:drawableStart="@drawable/phonelink"
+                    android:textSize="15sp"
+                    android:layout_margin="4dp"
+                    android:padding="3dp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:text="Indore :"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/darkblack"
+                    android:textSize="15sp"
+                    android:layout_margin="4dp"
+                    android:padding="3dp"/>
+
+                <TextView
+                    android:text="9770501721"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/dark_blue"
+                    android:textIsSelectable="true"
+                    android:drawableStart="@drawable/phonelink"
+                    android:textSize="15sp"
+                    android:layout_margin="4dp"
+                    android:padding="3dp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:text="Jabalpur :"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/darkblack"
+                    android:textSize="15sp"
+                    android:layout_margin="4dp"
+                    android:padding="3dp"/>
+
+                <TextView
+                    android:text="9770501728"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/dark_blue"
+                    android:textIsSelectable="true"
+                    android:drawableStart="@drawable/phonelink"
+                    android:textSize="15sp"
+                    android:layout_margin="4dp"
+                    android:padding="3dp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:text="Jaipur :"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/darkblack"
+                    android:textSize="15sp"
+                    android:layout_margin="4dp"
+                    android:padding="3dp"/>
+
+                <TextView
+                    android:text="9799951953"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/dark_blue"
+                    android:textIsSelectable="true"
+                    android:drawableStart="@drawable/phonelink"
+                    android:textSize="15sp"
+                    android:layout_margin="4dp"
+                    android:padding="3dp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:text="Kanpur :"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/darkblack"
+                    android:textSize="15sp"
+                    android:layout_margin="4dp"
+                    android:padding="3dp"/>
+
+                <TextView
+                    android:text="9115049990, 9935171688"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/dark_blue"
+                    android:textIsSelectable="true"
+                    android:drawableStart="@drawable/phonelink"
+                    android:textSize="15sp"
+                    android:layout_margin="4dp"
+                    android:padding="3dp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:text="Kolkata :"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/darkblack"
+                    android:textSize="15sp"
+                    android:layout_margin="4dp"
+                    android:padding="3dp"/>
+
+                <TextView
+                    android:text="7044292990"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/dark_blue"
+                    android:textIsSelectable="true"
+                    android:drawableStart="@drawable/phonelink"
+                    android:textSize="15sp"
+                    android:layout_margin="4dp"
+                    android:padding="3dp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:text="Ludhiana :"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/darkblack"
+                    android:textSize="15sp"
+                    android:layout_margin="4dp"
+                    android:padding="3dp"/>
+
+                <TextView
+                    android:text="6239232366, 9781343999"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/dark_blue"
+                    android:textIsSelectable="true"
+                    android:drawableStart="@drawable/phonelink"
+                    android:textSize="15sp"
+                    android:layout_margin="4dp"
+                    android:padding="3dp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:text="Ludhiana :"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/darkblack"
+                    android:textSize="15sp"
+                    android:layout_margin="4dp"
+                    android:padding="3dp"/>
+
+                <TextView
+                    android:text="6239232366, 9781343999"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/dark_blue"
+                    android:textIsSelectable="true"
+                    android:drawableStart="@drawable/phonelink"
+                    android:textSize="15sp"
+                    android:layout_margin="4dp"
+                    android:padding="3dp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:text="Mumbai :"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/darkblack"
+                    android:textSize="15sp"
+                    android:layout_margin="4dp"
+                    android:padding="3dp"/>
+
+                <TextView
+                    android:text="9137155580, 9137155576"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/dark_blue"
+                    android:textIsSelectable="true"
+                    android:drawableStart="@drawable/phonelink"
+                    android:textSize="15sp"
+                    android:layout_margin="4dp"
+                    android:padding="3dp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:text="Nagpur :"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/darkblack"
+                    android:textSize="15sp"
+                    android:layout_margin="4dp"
+                    android:padding="3dp"/>
+
+                <TextView
+                    android:text="8411888455, 7768008667"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/dark_blue"
+                    android:textIsSelectable="true"
+                    android:drawableStart="@drawable/phonelink"
+                    android:textSize="15sp"
+                    android:layout_margin="4dp"
+                    android:padding="3dp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:text="Delhi-Gandhi Nagar :"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/darkblack"
+                    android:textSize="15sp"
+                    android:layout_margin="4dp"
+                    android:padding="3dp"/>
+
+                <TextView
+                    android:text="8882548189, 9625559542"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/dark_blue"
+                    android:textIsSelectable="true"
+                    android:drawableStart="@drawable/phonelink"
+                    android:textSize="15sp"
+                    android:layout_margin="4dp"
+                    android:padding="3dp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:text="Delhi-Tank Road :"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/darkblack"
+                    android:textSize="15sp"
+                    android:layout_margin="4dp"
+                    android:padding="3dp"/>
+
+                <TextView
+                    android:text="9667792906, 9667792907"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/dark_blue"
+                    android:textIsSelectable="true"
+                    android:drawableStart="@drawable/phonelink"
+                    android:textSize="15sp"
+                    android:layout_margin="4dp"
+                    android:padding="3dp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:text="Surat :"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/darkblack"
+                    android:textSize="15sp"
+                    android:layout_margin="4dp"
+                    android:padding="3dp"/>
+
+                <TextView
+                    android:text="9512974949"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/dark_blue"
+                    android:textIsSelectable="true"
+                    android:drawableStart="@drawable/phonelink"
+                    android:textSize="15sp"
+                    android:layout_margin="4dp"
+                    android:padding="3dp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:text="Tiruppur :"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/darkblack"
+                    android:textSize="15sp"
+                    android:layout_margin="4dp"
+                    android:padding="3dp"/>
+
+                <TextView
+                    android:text="9384019740, 7708245839"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/dark_blue"
+                    android:textIsSelectable="true"
+                    android:drawableStart="@drawable/phonelink"
+                    android:textSize="15sp"
+                    android:layout_margin="4dp"
+                    android:padding="3dp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:text="Ullas Nagar :"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/darkblack"
+                    android:textSize="15sp"
+                    android:layout_margin="4dp"
+                    android:padding="3dp"/>
+
+                <TextView
+                    android:text="7710088403, 9321168002"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/dark_blue"
+                    android:textIsSelectable="true"
+                    android:drawableStart="@drawable/phonelink"
+                    android:textSize="15sp"
+                    android:layout_margin="4dp"
+                    android:padding="3dp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:text="Panipat :"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/darkblack"
+                    android:textSize="15sp"
+                    android:layout_margin="4dp"
+                    android:padding="3dp"/>
+
+                <TextView
+                    android:text="7678423200"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/dark_blue"
+                    android:textIsSelectable="true"
+                    android:drawableStart="@drawable/phonelink"
+                    android:textSize="15sp"
+                    android:layout_margin="4dp"
+                    android:padding="3dp"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

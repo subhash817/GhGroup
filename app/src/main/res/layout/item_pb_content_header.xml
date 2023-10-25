@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="2.5"
+        android:gravity="center"
+        android:includeFontPadding="false"
+        android:maxLines="1"
+        android:padding="3dp"
+        android:text="Vchr Type"
+        android:textAllCaps="false"
+        android:textColor="@color/darkblack" />
+
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="2.5"
+        android:includeFontPadding="false"
+        android:maxLines="1"
+        android:padding="3dp"
+        android:text="Date"
+        android:textAllCaps="false"
+        android:textColor="@color/darkblack" />
+
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="2.5"
+        android:includeFontPadding="false"
+        android:maxLines="1"
+        android:padding="3dp"
+        android:text="DueDate"
+        android:textAllCaps="false"
+        android:textColor="@color/darkblack" />
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="2.5"
+        android:includeFontPadding="false"
+        android:maxLines="1"
+        android:padding="3dp"
+        android:text="Vchr num"
+        android:textAllCaps="false"
+        android:textColor="@color/darkblack" />
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="2.5"
+        android:includeFontPadding="false"
+        android:maxLines="1"
+        android:padding="3dp"
+        android:text="Branch"
+        android:textAllCaps="false"
+        android:textColor="@color/darkblack" />
+
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="2.5"
+        android:includeFontPadding="false"
+        android:maxLines="1"
+        android:padding="3dp"
+        android:text="Bill Amt"
+        android:textAllCaps="false"
+        android:textColor="@color/darkblack" />
+
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="2.5"
+        android:includeFontPadding="false"
+        android:maxLines="1"
+        android:padding="3dp"
+        android:text="Balance Due"
+        android:textAllCaps="false"
+        android:textColor="@color/darkblack" />
+
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="2.5"
+        android:includeFontPadding="false"
+        android:maxLines="1"
+        android:padding="3dp"
+        android:text="Vendor Name"
+        android:textAllCaps="false"
+        android:textColor="@color/darkblack" />
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="2.5"
+        android:includeFontPadding="false"
+        android:maxLines="1"
+        android:padding="3dp"
+        android:text="LR No"
+        android:textAllCaps="false"
+        android:textColor="@color/darkblack" />
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="2.5"
+        android:includeFontPadding="false"
+        android:maxLines="1"
+        android:padding="3dp"
+        android:text="Trans Name"
+        android:textAllCaps="false"
+        android:textColor="@color/darkblack" />
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="2.5"
+        android:includeFontPadding="false"
+        android:maxLines="1"
+        android:padding="3dp"
+        android:text="LR Date"
+        android:textAllCaps="false"
+        android:textColor="@color/darkblack" />
+
+    <TextView
+        android:visibility="gone"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="2.5"
+        android:includeFontPadding="false"
+        android:maxLines="1"
+        android:padding="3dp"
+        android:text="Balance"
+        android:textAllCaps="false"
+        android:textColor="@color/darkblack" />
+
+    <TextView
+        android:visibility="gone"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="2.5"
+        android:includeFontPadding="false"
+        android:maxLines="1"
+        android:padding="3dp"
+        android:text="DocEntry"
+        android:textAllCaps="false"
+        android:textColor="@color/darkblack" />
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="2.5"
+        android:includeFontPadding="false"
+        android:maxLines="1"
+        android:padding="3dp"
+        android:text="Download"
+        android:textAllCaps="false"
+        android:textColor="@color/darkblack" />
+
+</LinearLayout>

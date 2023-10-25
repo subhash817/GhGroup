@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+   <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".activity.Graph_Dashboard">
+
+      <include
+          android:id="@+id/header_back"
+          layout="@layout/custom_toolbar"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"/>
+
+   <LinearLayout
+       android:orientation="vertical"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent">
+
+      <RelativeLayout
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:layout_marginTop="60dp">
+
+      <RelativeLayout
+          android:id="@+id/rl_cust_ghBilling_graph"
+          android:layout_width="match_parent"
+          android:layout_height="60dp"
+          android:layout_marginLeft="15dp"
+          android:layout_marginRight="15dp"
+          android:background="@color/sky">
+
+         <!--<ImageView
+             android:id="@+id/imgDashboard"
+             android:layout_width="40dp"
+             android:layout_height="match_parent"
+             android:padding="8dp"
+             android:src="@drawable/dashboard" />-->
+
+         <TextView
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:gravity="center_vertical"
+             android:paddingStart="10dp"
+             android:text="@string/gh_billings"
+             android:textColor="@color/white"
+             android:textSize="18sp"
+             android:textStyle="normal" />
+
+      </RelativeLayout>
+
+         <RelativeLayout
+             android:id="@+id/rl_cust_directBilling_graph"
+             android:layout_width="match_parent"
+             android:layout_height="60dp"
+             android:layout_below="@id/rl_cust_ghBilling_graph"
+             android:layout_marginLeft="15dp"
+             android:layout_marginTop="15dp"
+             android:layout_marginRight="15dp"
+             android:background="@color/sky">
+
+            <!--<ImageView
+                android:id="@+id/imgDashboard"
+                android:layout_width="40dp"
+                android:layout_height="match_parent"
+                android:padding="8dp"
+                android:src="@drawable/dashboard" />-->
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:paddingStart="10dp"
+                android:text="@string/direct_billings"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:textStyle="normal" />
+
+         </RelativeLayout>
+
+         <RelativeLayout
+             android:id="@+id/rl_cust_gh_ageingDetails_graph"
+             android:layout_width="match_parent"
+             android:layout_height="60dp"
+             android:layout_below="@id/rl_cust_directBilling_graph"
+             android:layout_marginLeft="15dp"
+             android:layout_marginTop="15dp"
+             android:layout_marginRight="15dp"
+             android:background="@color/sky">
+
+            <!--<ImageView
+                android:id="@+id/imgDashboard"
+                android:layout_width="40dp"
+                android:layout_height="match_parent"
+                android:padding="8dp"
+                android:src="@drawable/dashboard" />-->
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:paddingStart="10dp"
+                android:text="@string/gh_ageing"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:textStyle="normal" />
+
+         </RelativeLayout>
+
+         <RelativeLayout
+             android:id="@+id/rl_cust_direct_ageingDetails_graph"
+             android:layout_width="match_parent"
+             android:layout_height="60dp"
+             android:layout_below="@id/rl_cust_gh_ageingDetails_graph"
+             android:layout_marginLeft="15dp"
+             android:layout_marginTop="15dp"
+             android:layout_marginRight="15dp"
+             android:background="@color/sky">
+
+            <!--<ImageView
+                android:id="@+id/imgDashboard"
+                android:layout_width="40dp"
+                android:layout_height="match_parent"
+                android:padding="8dp"
+                android:src="@drawable/dashboard" />-->
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:paddingStart="10dp"
+                android:text="@string/direct_ageing"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:textStyle="normal" />
+
+         </RelativeLayout>
+
+      </RelativeLayout>
+
+   </LinearLayout>
+
+   </LinearLayout>
+
+</layout>

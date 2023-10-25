@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+  <LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_margin="8dp">
+
+    <!--<EditText android:id="@+id/EditBox"
+        android:maxLines="1"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:gravity="left">
+    </EditText>
+
+    <ListView android:id="@+id/List"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:choiceMode="singleChoice">
+    </ListView>-->
+
+    <!--<ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">-->
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/dark_blue"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginStart="@dimen/margin"
+            android:background="@color/dark_blue"
+            android:padding="3sp"
+            android:layout_gravity="center|start"
+            android:text="Select Code"
+            android:textColor="@color/white"
+            android:textSize="14sp" />
+
+        <!--<ImageView
+            android:id="@+id/dlg_close"
+            android:layout_width="30dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center|end"
+            android:background="@drawable/search_btn"
+            android:padding="@dimen/margin" />-->
+
+    </FrameLayout>
+
+        <SearchView
+            android:id="@+id/search_client"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:imeOptions="actionSearch" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/gray" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/customer_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    </FrameLayout>
+
+ </LinearLayout>

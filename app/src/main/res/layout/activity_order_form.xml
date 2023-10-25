@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".activity.OrderForm">
+
+    <include
+        android:id="@+id/header_back"
+        layout="@layout/custom_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+     <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/txt_order_last_update"
+            android:textSize="12sp"
+            android:text="last update"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="40dp"
+            android:textColor="@color/darkblack"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+         <RelativeLayout
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:layout_marginTop="20dp">
+
+                 <RelativeLayout
+                     android:id="@+id/ll_order_form_entry"
+                     android:layout_width="match_parent"
+                     android:layout_height="60dp"
+                     android:layout_marginLeft="15dp"
+                     android:layout_marginRight="15dp"
+                     android:background="@drawable/search_button_design">
+
+                     <ImageView
+                         android:id="@+id/imgOrderDone"
+                         android:layout_width="40dp"
+                         android:layout_height="match_parent"
+                         android:padding="8dp"
+                         android:src="@drawable/order_done_all" />
+
+                     <TextView
+                         android:layout_width="match_parent"
+                         android:layout_height="match_parent"
+                         android:layout_toEndOf="@id/imgOrderDone"
+                         android:gravity="center_vertical"
+                         android:paddingStart="10dp"
+                         android:textColor="@color/white"
+                         android:textSize="20sp"
+                         android:textStyle="bold"
+                         android:text="Order Form Entry" />
+
+                 </RelativeLayout>
+
+                 <RelativeLayout
+                     android:visibility="gone"
+                     android:id="@+id/ll_order_form_approval"
+                     android:layout_width="match_parent"
+                     android:layout_height="60dp"
+                     android:layout_below="@id/ll_order_form_entry"
+                     android:layout_marginLeft="15dp"
+                     android:layout_marginTop="15dp"
+                     android:layout_marginRight="15dp"
+                     android:background="@drawable/search_button_design">
+
+                     <ImageView
+                         android:id="@+id/imgApprovalTask"
+                         android:layout_width="40dp"
+                         android:layout_height="match_parent"
+                         android:padding="8dp"
+                         android:src="@drawable/approval_task_alt" />
+
+                     <TextView
+                         android:layout_width="match_parent"
+                         android:layout_height="match_parent"
+                         android:layout_toEndOf="@id/imgApprovalTask"
+                         android:gravity="center_vertical"
+                         android:paddingStart="10dp"
+                         android:text="Order Approval Task"
+                         android:textColor="@color/white"
+                         android:textSize="20sp"
+                         android:textStyle="bold" />
+
+                 </RelativeLayout>
+
+             <RelativeLayout
+                 android:id="@+id/ll_order_report"
+                 android:layout_width="match_parent"
+                 android:layout_height="60dp"
+                 android:layout_below="@id/ll_order_form_approval"
+                 android:layout_marginLeft="15dp"
+                 android:layout_marginTop="15dp"
+                 android:layout_marginRight="15dp"
+                 android:background="@drawable/search_button_design">
+
+                 <ImageView
+                     android:id="@+id/imgApprovalTask1"
+                     android:layout_width="40dp"
+                     android:layout_height="match_parent"
+                     android:padding="8dp"
+                     android:src="@drawable/approval_task_alt" />
+
+                 <TextView
+                     android:layout_width="match_parent"
+                     android:layout_height="match_parent"
+                     android:layout_toEndOf="@id/imgApprovalTask1"
+                     android:gravity="center_vertical"
+                     android:paddingStart="10dp"
+                     android:text="Order Report"
+                     android:textColor="@color/white"
+                     android:textSize="20sp"
+                     android:textStyle="bold" />
+
+             </RelativeLayout>
+
+             <com.google.android.material.floatingactionbutton.FloatingActionButton
+                 android:id="@+id/fab_orderPort_log"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_alignParentBottom="true"
+                 android:layout_centerHorizontal="true"
+                 android:layout_gravity="right"
+                 android:layout_marginStart="8dp"
+                 android:layout_marginTop="8dp"
+                 android:layout_marginEnd="8dp"
+                 android:layout_marginBottom="8dp"
+                 android:src="@drawable/phone"
+                 app:backgroundTint="@color/dark_green" />
+
+         </RelativeLayout>
+
+     </LinearLayout>
+
+    </LinearLayout>
+
+</layout>

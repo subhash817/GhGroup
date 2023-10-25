@@ -1,0 +1,674 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".activity.GeneralReportActivity">
+
+        <include
+            android:id="@+id/header_back"
+            layout="@layout/custom_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <!-- <HorizontalScrollView
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content">-->
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_margin="6dp"
+            android:id="@+id/gr_basicll"
+            android:weightSum="4"
+            android:background="@color/dark_blue"
+            android:stretchMode="columnWidth"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:visibility="gone"
+                android:id="@+id/txt_genLed_cust_srNobasic"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:padding="3dp"
+                android:text="S.NO."
+                android:textColor="@color/darkblack"
+                android:textSize="14sp" />
+
+            <RelativeLayout
+                android:layout_weight="1"
+                android:stretchMode="columnWidth"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/txt_gr_PostDate"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:gravity="center"
+                    android:padding="1dp"
+                    android:text="Post Date"
+                    android:textColor="@color/white"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:visibility="gone"
+                    android:id="@+id/tv_PostDate"
+                    android:layout_width="79dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txt_gr_PostDate"
+                    android:gravity="center_horizontal"
+                    android:padding="3dp"
+                    android:textColor="@color/darkblack"
+                    android:textSize="12sp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_weight="1"
+                android:stretchMode="columnWidth"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/txt_gr_DocNo"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:gravity="center"
+                    android:padding="1dp"
+                    android:text="BillNo"
+                    android:textColor="@color/white"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:visibility="gone"
+                    android:id="@+id/tv_DocNo"
+                    android:layout_width="77dp"
+                    android:layout_height="wrap_content"
+                    android:padding="3dp"
+                    android:layout_below="@+id/txt_gr_DocNo"
+                    android:gravity="center_horizontal"
+                    android:textColor="@color/darkblack"
+                    android:textSize="12sp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_weight="1"
+                android:stretchMode="columnWidth"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/txt_gr_BillNo"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:gravity="center"
+                    android:padding="1dp"
+                    android:text="Vendor"
+                    android:textColor="@color/white"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tv_BillNos"
+                    android:layout_width="78dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txt_gr_BillNo"
+                    android:gravity="center_horizontal"
+                    android:padding="3dp"
+                    android:textColor="@color/darkblack"
+                    android:textSize="12sp"
+                    android:visibility="gone" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_weight="1"
+                android:visibility="gone"
+                android:stretchMode="columnWidth"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/txt_gr_BillDate"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:gravity="center"
+                    android:padding="1dp"
+                    android:text="Bill Date"
+                    android:textColor="@color/darkblack"
+                    android:textSize="10sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:visibility="gone"
+                    android:id="@+id/tv_Bill_Date"
+                    android:layout_width="78dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txt_gr_BillDate"
+                    android:gravity="center_horizontal"
+                    android:padding="3dp"
+                    android:textColor="@color/darkblack"
+                    android:textSize="12sp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_weight="1"
+                android:stretchMode="columnWidth"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/txt_gr_TotalAmt"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:gravity="center"
+                    android:padding="1dp"
+                    android:text="Total Amt"
+                    android:textColor="@color/white"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:visibility="gone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="80dp"
+                    android:layout_height="30dp"
+                    android:gravity="center_horizontal" />
+
+            </RelativeLayout>
+
+
+            <ImageView
+                android:visibility="gone"
+                android:id="@+id/img_More"
+                android:layout_width="30dp"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:src="@drawable/more_event_white" />
+
+            <HorizontalScrollView
+                android:id="@+id/moreDetails"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone">
+
+                <LinearLayout
+                    android:visibility="gone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <RelativeLayout
+                        android:visibility="gone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/txt_gr_VendBillNo"
+                            android:layout_width="90dp"
+                            android:layout_height="wrap_content"
+                            android:background="@color/sky"
+                            android:gravity="center_horizontal"
+                            android:padding="3dp"
+                            android:text="Doc No"
+                            android:textColor="@color/darkblack"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:id="@+id/tv_Vend_BillNo"
+                            android:layout_width="90dp"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/txt_gr_VendBillNo"
+                            android:gravity="center_horizontal"
+                            android:padding="3dp"
+                            android:textColor="@color/darkblack"
+                            android:textSize="12sp" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:visibility="gone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/txt_gr_Branch"
+                            android:layout_width="80dp"
+                            android:layout_height="wrap_content"
+                            android:background="@color/sky"
+                            android:gravity="center_horizontal"
+                            android:padding="3dp"
+                            android:text="Branch"
+                            android:textColor="@color/darkblack"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:id="@+id/tv_Branch"
+                            android:layout_width="80dp"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/txt_gr_Branch"
+                            android:gravity="center_horizontal"
+                            android:padding="3dp"
+                            android:textColor="@color/darkblack"
+                            android:textSize="12sp" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:visibility="gone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/txt_gr_VendName"
+                            android:layout_width="80dp"
+                            android:layout_height="wrap_content"
+                            android:background="@color/sky"
+                            android:gravity="center_horizontal"
+                            android:padding="3dp"
+                            android:text="Bill No"
+                            android:textColor="@color/darkblack"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:id="@+id/tv_VendName"
+                            android:layout_width="80dp"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/txt_gr_VendName"
+                            android:gravity="center_horizontal"
+                            android:padding="3dp"
+                            android:textColor="@color/darkblack"
+                            android:textSize="12sp" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:visibility="gone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/txt_gr_Narration"
+                            android:layout_width="80dp"
+                            android:layout_height="wrap_content"
+                            android:background="@color/sky"
+                            android:gravity="center_horizontal"
+                            android:padding="3dp"
+                            android:text="Narration"
+                            android:textColor="@color/darkblack"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:id="@+id/tv_Narration"
+                            android:layout_width="80dp"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/txt_gr_Narration"
+                            android:gravity="center_horizontal"
+                            android:padding="3dp"
+                            android:textColor="@color/darkblack"
+                            android:textSize="12sp" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:visibility="gone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/txt_gr_VendorBillNo"
+                            android:layout_width="90dp"
+                            android:layout_height="wrap_content"
+                            android:background="@color/sky"
+                            android:gravity="center_horizontal"
+                            android:padding="3dp"
+                            android:text="Vend Bill No"
+                            android:textColor="@color/darkblack"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:id="@+id/tv_VendorBillNo"
+                            android:layout_width="90dp"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/txt_gr_VendorBillNo"
+                            android:gravity="center_horizontal"
+                            android:padding="3dp"
+                            android:textColor="@color/darkblack"
+                            android:textSize="12sp" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:visibility="gone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/txt_gr_VendorName"
+                            android:layout_width="90dp"
+                            android:layout_height="wrap_content"
+                            android:background="@color/sky"
+                            android:gravity="center_horizontal"
+                            android:padding="3dp"
+                            android:text="Vendor Name"
+                            android:textColor="@color/darkblack"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:id="@+id/tv_VendorName"
+                            android:layout_width="90dp"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/txt_gr_VendorName"
+                            android:gravity="center_horizontal"
+                            android:padding="3dp"
+                            android:textColor="@color/darkblack"
+                            android:textSize="12sp" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:visibility="gone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/txt_gr_VoucherNumber"
+                            android:layout_width="90dp"
+                            android:layout_height="wrap_content"
+                            android:background="@color/sky"
+                            android:gravity="center_horizontal"
+                            android:padding="3dp"
+                            android:text="Voucher Number"
+                            android:textColor="@color/darkblack"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:id="@+id/tv_VoucherNumber"
+                            android:layout_width="90dp"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/txt_gr_VoucherNumber"
+                            android:gravity="center_horizontal"
+                            android:padding="3dp"
+                            android:textColor="@color/darkblack"
+                            android:textSize="12sp" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:visibility="gone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/txt_gr_VoucherType"
+                            android:layout_width="90dp"
+                            android:layout_height="wrap_content"
+                            android:background="@color/sky"
+                            android:gravity="center_horizontal"
+                            android:padding="3dp"
+                            android:text="Voucher Type"
+                            android:textColor="@color/darkblack"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:id="@+id/tv_VoucherType"
+                            android:layout_width="90dp"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/txt_gr_VoucherType"
+                            android:gravity="center_horizontal"
+                            android:padding="3dp"
+                            android:textColor="@color/darkblack"
+                            android:textSize="12sp" />
+
+                    </RelativeLayout>
+
+                    <TextView
+                        android:id="@+id/TextHide"
+                        android:layout_width="80dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal"
+                        android:padding="3dp"
+                        android:text="Hide.."
+                        android:textColor="@color/sky"
+                        android:textSize="12sp"
+                        android:textStyle="bold"
+                        android:visibility="gone" />
+
+                </LinearLayout>
+
+            </HorizontalScrollView>
+
+        </LinearLayout>
+
+        <!-- </HorizontalScrollView>-->
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_gr_Comm_details"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <!--<ProgressBar
+                android:id="@+id/progressBar1"
+                style="?android:attr/progressBarStyleLarge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:visibility="gone"
+                android:layout_gravity="center" />-->
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llgr_showTotal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="6dp"
+            android:orientation="horizontal"
+            android:background="@color/dark_blue">
+
+            <TextView
+                android:id="@+id/gr_showTotal"
+                android:textSize="16sp"
+                android:gravity="center_vertical"
+                android:paddingEnd="10sp"
+                android:textStyle="bold"
+                android:textAlignment="textEnd"
+                android:textColor="@color/white"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                tools:ignore="RtlCompat" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:background="@color/dark_green" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginStart="4dp"
+                android:gravity="center"
+                android:text="SHOWS CREDIT"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:textSize="12sp" />
+
+            <TextView
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="20dp"
+                android:background="@color/red" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginStart="4dp"
+                android:gravity="center"
+                android:text="SHOWS DEBIT"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:textSize="12sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:visibility="gone"
+            android:id="@+id/grReg_basicll1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="4"
+            android:stretchMode="columnWidth"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:layout_weight="1"
+                android:stretchMode="columnWidth"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tv_grDate"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:gravity="center"
+                    android:padding="1dp"
+                    android:text="Total:"
+                    android:textColor="@color/darkblack"
+                    android:textSize="9sp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_weight="1"
+                android:stretchMode="columnWidth"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tv_grVoucherNumber"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:gravity="center"
+                    android:maxLines="1"
+                    android:padding="1dp"
+                    android:singleLine="true"
+                    android:textColor="@color/darkblack"
+                    android:textSize="9sp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_weight="1"
+                android:stretchMode="columnWidth"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tv_grCustomerName"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:gravity="center"
+                    android:maxLines="1"
+                    android:maxLength="12"
+                    android:padding="1dp"
+                    android:singleLine="true"
+                    android:textColor="@color/darkblack"
+                    android:textSize="9sp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_weight="1"
+                android:stretchMode="columnWidth"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tv_grTotalAmt"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:gravity="center"
+                    android:textColor="@color/darkblack"
+                    android:textSize="9sp" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            card_view:cardBackgroundColor="@android:color/transparent"
+            card_view:cardElevation="3dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_margin="8dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:visibility="gone"
+                    android:id="@+id/GR_PDFDOWNLOD"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="3dp"
+                    android:text="@string/pdf" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/GR_excelDownload"
+                    android:layout_width="wrap_content"
+                    android:layout_height="35dp"
+                    android:layout_margin="3dp"
+                    android:textColor="@color/white"
+                    android:background="@drawable/search_button_design"
+                    android:text="@string/excel" />
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+      </LinearLayout>
+
+    </LinearLayout>
+</layout>
+
+

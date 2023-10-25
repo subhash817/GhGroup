@@ -1,0 +1,460 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="wrap_content"
+    android:layout_height="@dimen/row_height">
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/basicll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/txt_date"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:background="@color/sky"
+                    android:gravity="center_horizontal"
+                    android:padding="3dp"
+                    android:text="Date"
+                    android:textColor="@color/darkblack"
+                    android:textSize="13sp"
+                    android:visibility="visible" />
+
+                <TextView
+                    android:id="@+id/tv_Date"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txt_date"
+                    android:gravity="center_horizontal"
+                    android:padding="3dp"
+                    android:textColor="@color/darkblack"
+                    android:textSize="13sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/txt_VoucherType"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:background="@color/sky"
+                    android:gravity="center_horizontal"
+                    android:padding="3dp"
+                    android:text="Vchr Type"
+                    android:textColor="@color/darkblack"
+                    android:textSize="13sp"
+                    android:visibility="visible" />
+
+                <TextView
+                    android:id="@+id/tv_VoucherType"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txt_VoucherType"
+                    android:gravity="center_horizontal"
+                    android:padding="3dp"
+                    android:textColor="@color/darkblack"
+                    android:textSize="13sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/txt_VoucherNumber"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:background="@color/sky"
+                    android:gravity="center_horizontal"
+                    android:padding="3dp"
+                    android:text="Vchr Num"
+                    android:textColor="@color/darkblack"
+                    android:textSize="13sp"
+                    android:visibility="visible" />
+
+                <TextView
+                    android:id="@+id/tv_VoucherNumber"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txt_VoucherNumber"
+                    android:gravity="center_horizontal"
+                    android:padding="3dp"
+                    android:textColor="@color/darkblack"
+                    android:textSize="13sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/txt_Debit"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:background="@color/sky"
+                    android:gravity="center_horizontal"
+                    android:padding="3dp"
+                    android:text="Debit"
+                    android:textColor="@color/darkblack"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:id="@+id/tv_Debit"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txt_Debit"
+                    android:gravity="center_horizontal"
+                    android:padding="3dp"
+                    android:textColor="@color/red"
+                    android:textSize="13sp" />
+
+            </RelativeLayout>
+
+
+
+            <TextView
+                android:id="@+id/tvMore"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:background="@color/sky"
+                android:gravity="center_horizontal"
+                android:padding="3dp"
+                android:text="More.."
+                android:textColor="@color/darkblack"
+                android:textSize="13sp"
+                android:visibility="visible" />
+
+            <HorizontalScrollView
+                android:id="@+id/moreDetails"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/txt_genLed_cust_srNo"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="3dp"
+                        android:layout_weight="1"
+                        android:padding="3dp"
+                        android:text="S.NO."
+                        android:textColor="@color/darkblack"
+                        android:textSize="14sp"
+                        android:visibility="gone" />
+
+
+
+
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/txt_Credit"
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            android:background="@color/sky"
+                            android:gravity="center_horizontal"
+                            android:padding="3dp"
+                            android:text="Credit"
+                            android:textColor="@color/darkblack"
+                            android:textSize="13sp" />
+
+                        <TextView
+                            android:id="@+id/tv_Credit"
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/txt_Credit"
+                            android:gravity="center_horizontal"
+                            android:padding="3dp"
+                            android:textColor="@color/green"
+                            android:textSize="13sp" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/txt_Branch"
+                            android:layout_width="80dp"
+                            android:layout_height="wrap_content"
+                            android:background="@color/sky"
+                            android:gravity="center_horizontal"
+                            android:padding="3dp"
+                            android:text="Branch"
+                            android:textColor="@color/darkblack"
+                            android:textSize="13sp"
+                            android:visibility="visible" />
+
+                        <TextView
+                            android:id="@+id/tv_Branch"
+                            android:layout_width="80dp"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/txt_Branch"
+                            android:gravity="center_horizontal"
+                            android:padding="3dp"
+                            android:textColor="@color/darkblack"
+                            android:textSize="13sp" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/txt_VendorName"
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            android:background="@color/sky"
+                            android:gravity="center_horizontal"
+                            android:padding="3dp"
+                            android:text="VendorName"
+                            android:textColor="@color/darkblack"
+                            android:textSize="13sp" />
+
+                        <TextView
+                            android:id="@+id/tv_VendorName"
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/txt_VendorName"
+                            android:gravity="center_horizontal"
+                            android:padding="3dp"
+                            android:textColor="@color/darkblack"
+                            android:textSize="13sp" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/txt_LRNO"
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            android:background="@color/sky"
+                            android:gravity="center_horizontal"
+                            android:padding="3dp"
+                            android:text="@string/lr_no"
+                            android:textColor="@color/darkblack"
+                            android:textSize="13sp" />
+
+                        <TextView
+                            android:id="@+id/tv_LRNO"
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/txt_LRNO"
+                            android:gravity="center_horizontal"
+                            android:padding="3dp"
+                            android:textColor="@color/darkblack"
+                            android:textSize="13sp" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/txt_TransporterName"
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            android:background="@color/sky"
+                            android:gravity="center_horizontal"
+                            android:padding="3dp"
+                            android:text="Trans Name"
+                            android:textColor="@color/darkblack"
+                            android:textSize="13sp" />
+
+                        <TextView
+                            android:id="@+id/tv_TransporterName"
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/txt_TransporterName"
+                            android:gravity="center_horizontal"
+                            android:padding="3dp"
+                            android:textColor="@color/darkblack"
+                            android:textSize="13sp" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/txt_LRDate"
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            android:background="@color/sky"
+                            android:gravity="center_horizontal"
+                            android:padding="3dp"
+                            android:text="LR Date"
+                            android:textColor="@color/darkblack"
+                            android:textSize="13sp" />
+
+
+                        <TextView
+                            android:id="@+id/tv_LRDate"
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/txt_LRDate"
+                            android:gravity="center_horizontal"
+                            android:padding="3dp"
+                            android:textColor="@color/darkblack"
+                            android:textSize="13sp" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/txt_NoOfParcels"
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            android:background="@color/sky"
+                            android:gravity="center_horizontal"
+                            android:padding="3dp"
+                            android:text="No Of Parcels"
+                            android:textColor="@color/darkblack"
+                            android:textSize="13sp" />
+
+                        <TextView
+                            android:id="@+id/tv_NoOfParcels"
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/txt_NoOfParcels"
+                            android:gravity="center_horizontal"
+                            android:padding="3dp"
+                            android:textColor="@color/darkblack"
+                            android:textSize="13sp" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone">
+
+                        <TextView
+                            android:id="@+id/txt_DocEntry"
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            android:background="@color/sky"
+                            android:gravity="center_horizontal"
+                            android:padding="3dp"
+                            android:text="Doc Entry"
+                            android:textColor="@color/darkblack"
+                            android:textSize="13sp" />
+
+                        <TextView
+                            android:id="@+id/tv_DocEntry"
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/txt_DocEntry"
+                            android:gravity="center_horizontal"
+                            android:padding="3dp"
+                            android:textColor="@color/darkblack"
+                            android:textSize="13sp" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone">
+
+                        <TextView
+                            android:id="@+id/txt_OutStanding"
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            android:background="@color/sky"
+                            android:gravity="center_horizontal"
+                            android:padding="3dp"
+                            android:text="Outstanding"
+                            android:textColor="@color/darkblack"
+                            android:textSize="13sp" />
+
+                        <TextView
+                            android:id="@+id/tv_OutStanding"
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/txt_OutStanding"
+                            android:layout_weight="2"
+                            android:gravity="center_horizontal"
+                            android:padding="3dp"
+                            android:textColor="@color/darkblack"
+                            android:textSize="13sp" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/btn_cust_genLed_sales_dwnld"
+                            android:layout_width="80dp"
+                            android:layout_height="wrap_content"
+                            android:background="@color/sky"
+                            android:gravity="center_horizontal"
+                            android:padding="3dp"
+                            android:text="Download"
+                            android:textColor="@color/darkblack"
+                            android:textSize="13sp" />
+
+                        <Button
+                            android:id="@+id/btn_cust_genLed_sales_download"
+                            android:layout_width="80dp"
+                            android:layout_height="25dp"
+                            android:layout_below="@+id/btn_cust_genLed_sales_dwnld"
+                            android:layout_margin="3dp"
+                            android:background="@drawable/button_design"
+                            android:gravity="center_horizontal"
+                            android:padding="2dp"
+                            android:text="Download"
+                            android:textAllCaps="false"
+                            android:textSize="8sp" />
+
+                    </RelativeLayout>
+
+                    <TextView
+                        android:id="@+id/TextHide"
+                        android:layout_width="80dp"
+                        android:layout_height="wrap_content"
+                        android:background="@color/sky"
+                        android:gravity="center_horizontal"
+                        android:padding="3dp"
+                        android:text="Hide..."
+                        android:textColor="@color/darkblack"
+                        android:textSize="13sp"
+                        android:visibility="visible" />
+
+
+                </LinearLayout>
+
+            </HorizontalScrollView>
+        </LinearLayout>
+    </HorizontalScrollView>
+
+
+</LinearLayout>

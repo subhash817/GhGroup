@@ -1,0 +1,1048 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:id="@+id/llLayout"
+        tools:context=".activity.PurchesRegisterDeatilsActivity">
+
+        <include
+            android:id="@+id/header_back"
+            layout="@layout/custom_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <!-- <HorizontalScrollView
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content">-->
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_margin="6dp"
+            android:weightSum="4"
+            android:stretchMode="columnWidth"
+            android:id="@+id/purchase_basicll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/dark_blue"
+            android:orientation="horizontal">
+
+            <TextView
+                android:visibility="gone"
+                android:id="@+id/txt_genLed_cust_srNobasic"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:padding="3dp"
+                android:text="S.NO."
+                android:textColor="@color/darkblack"
+                android:textSize="14sp" />
+
+            <RelativeLayout
+                android:layout_weight="1"
+                android:stretchMode="columnWidth"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/txt_date"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:gravity="center"
+                    android:padding="1dp"
+                    android:text="Date"
+                    android:textColor="@color/white"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_weight="1"
+                android:stretchMode="columnWidth"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/txt_VchrNum"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:gravity="center"
+                    android:maxLines="1"
+                    android:padding="1dp"
+                    android:singleLine="true"
+                    android:text="Vchr Num"
+                    android:textColor="@color/white"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_weight="1"
+                android:stretchMode="columnWidth"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/txt_Branch"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:gravity="center"
+                    android:padding="1dp"
+                    android:text="Vendor"
+                    android:textColor="@color/white"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_weight="1"
+                android:stretchMode="columnWidth"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/txt_BillAmt"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:gravity="center"
+                    android:padding="1dp"
+                    android:text="Amt"
+                    android:textColor="@color/white"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+
+            <!-- <HorizontalScrollView
+                 android:id="@+id/moreDetails"
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:visibility="gone">
+
+                 <LinearLayout
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content"
+                     android:orientation="horizontal">-->
+
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:visibility="gone"
+                    android:id="@+id/txt_TaxableAmt"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:padding="3dp"
+                    android:text="Taxable Amt"
+                    android:textColor="@color/darkblack"
+                    android:textSize="12sp" />
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:visibility="gone"
+                    android:id="@+id/txt_TaxAmt"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:padding="3dp"
+                    android:text="Tax Amt"
+                    android:textColor="@color/darkblack"
+                    android:textSize="12sp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:visibility="gone"
+                    android:id="@+id/txt_VendorName"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:padding="3dp"
+                    android:text="Vendor Name"
+                    android:textColor="@color/darkblack"
+                    android:textSize="12sp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:visibility="gone"
+                    android:id="@+id/txt_LRNo"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:padding="3dp"
+                    android:text="LR No"
+                    android:textColor="@color/darkblack"
+                    android:textSize="12sp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:visibility="gone"
+                    android:id="@+id/txt_TransporterName"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:padding="3dp"
+                    android:text="Trans Name"
+                    android:textColor="@color/darkblack"
+                    android:textSize="12sp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:visibility="gone"
+                    android:id="@+id/txt_LRDate"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:padding="3dp"
+                    android:text="LR Date"
+                    android:textColor="@color/darkblack"
+                    android:textSize="12sp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:visibility="gone"
+                    android:id="@+id/txt_NoOfParcels"
+                    android:layout_width="90dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:padding="3dp"
+                    android:text="No Of Parcels"
+                    android:textColor="@color/darkblack"
+                    android:textSize="12sp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:visibility="gone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/txt_BalanceDue"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:padding="3dp"
+                    android:text="Balance Due"
+                    android:textColor="@color/darkblack"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/tv_BalanceDue"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:padding="3dp"
+                    android:layout_below="@+id/txt_BalanceDue"
+                    android:textColor="@color/darkblack"
+                    android:textSize="12sp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:visibility="gone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/txt_DocEntry"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:padding="3dp"
+                    android:text="Doc Entry"
+                    android:textColor="@color/darkblack"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/tv_DocEntry"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:padding="3dp"
+                    android:layout_below="@+id/txt_DocEntry"
+                    android:textColor="@color/darkblack"
+                    android:textSize="12sp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:visibility="gone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/txt_DueDate"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:padding="3dp"
+                    android:text="Due Date"
+                    android:textColor="@color/darkblack"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/tv_DueDate"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:padding="3dp"
+                    android:layout_below="@+id/txt_DueDate"
+                    android:textColor="@color/darkblack"
+                    android:textSize="12sp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:visibility="gone"
+                android:layout_weight="1"
+                android:stretchMode="columnWidth"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:gravity="center_horizontal" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/TextHide"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:padding="3dp"
+                android:text="Hide.."
+                android:textSize="12sp"
+                android:textStyle="bold"
+                android:visibility="gone" />
+
+        </LinearLayout>
+
+        <!--</HorizontalScrollView>
+
+    </LinearLayout>
+
+</HorizontalScrollView>-->
+
+
+        <!--<HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_margin="6dp"
+                android:id="@+id/purchase_basicll"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:visibility="gone"
+                    android:id="@+id/txt_genLed_cust_srNobasic"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:padding="3dp"
+                    android:text="S.NO."
+                    android:textColor="@color/darkblack"
+                    android:textSize="14sp" />
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/txt_date"
+                        android:layout_width="78dp"
+                        android:layout_height="wrap_content"
+                        android:background="@color/sky"
+                        android:gravity="center_horizontal"
+                        android:padding="3dp"
+                        android:text="Date"
+                        android:textColor="@color/darkblack"
+                        android:textSize="12sp" />
+
+                   &lt;!&ndash; <TextView
+                        android:id="@+id/tv_Date"
+                        android:layout_width="78dp"
+                        android:layout_height="wrap_content"
+                        android:padding="3dp"
+                        android:layout_below="@+id/txt_date"
+                        android:gravity="center_horizontal"
+                        android:textColor="@color/darkblack"
+                        android:textSize="12sp" />&ndash;&gt;
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/txt_VchrNum"
+                        android:layout_width="78dp"
+                        android:layout_height="wrap_content"
+                        android:background="@color/sky"
+                        android:gravity="center_horizontal"
+                        android:padding="3dp"
+                        android:text="Vchr Num"
+                        android:textColor="@color/darkblack"
+                        android:textSize="12sp" />
+
+                    &lt;!&ndash;<TextView
+                        android:id="@+id/tv_VoucherNumber"
+                        android:layout_width="78dp"
+                        android:layout_height="wrap_content"
+                        android:padding="3dp"
+                        android:layout_below="@+id/txt_VchrNum"
+                        android:gravity="center_horizontal"
+                        android:textColor="@color/darkblack"
+                        android:textSize="12sp" />&ndash;&gt;
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/txt_Branch"
+                        android:layout_width="78dp"
+                        android:layout_height="wrap_content"
+                        android:background="@color/sky"
+                        android:gravity="center_horizontal"
+                        android:padding="3dp"
+                        android:text="Branch"
+                        android:textColor="@color/darkblack"
+                        android:textSize="12sp" />
+
+                   &lt;!&ndash; <TextView
+                        android:id="@+id/tv_Branch"
+                        android:layout_width="78dp"
+                        android:layout_height="wrap_content"
+                        android:padding="3dp"
+                        android:layout_below="@+id/txt_Branch"
+                        android:gravity="center_horizontal"
+                        android:textColor="@color/darkblack"
+                        android:textSize="12sp" />&ndash;&gt;
+
+                </RelativeLayout>
+
+                 <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:id="@+id/txt_BillAmt"
+                                android:layout_width="78dp"
+                                android:layout_height="wrap_content"
+                                android:background="@color/sky"
+                                android:gravity="center_horizontal"
+                                android:padding="3dp"
+                                android:text="Bill Amt"
+                                android:textColor="@color/darkblack"
+                                android:textSize="12sp" />
+
+                            &lt;!&ndash;<TextView
+                                android:id="@+id/tv_BillAmt"
+                                android:layout_width="78dp"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/txt_BillAmt"
+                                android:gravity="center_horizontal"
+                                android:padding="3dp"
+                                android:textColor="@color/darkblack"
+                                android:textSize="12sp" />&ndash;&gt;
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:id="@+id/txt_TaxableAmt"
+                                android:layout_width="80dp"
+                                android:layout_height="wrap_content"
+                                android:background="@color/sky"
+                                android:gravity="center_horizontal"
+                                android:padding="3dp"
+                                android:text="Taxable Amt"
+                                android:textColor="@color/darkblack"
+                                android:textSize="12sp" />
+
+                            &lt;!&ndash;<TextView
+                                android:id="@+id/tv_TaxableAmt"
+                                android:layout_width="80dp"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/txt_TaxableAmt"
+                                android:gravity="center_horizontal"
+                                android:padding="3dp"
+                                android:textColor="@color/darkblack"
+                                android:textSize="12sp" />&ndash;&gt;
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:id="@+id/txt_TaxAmt"
+                                android:layout_width="80dp"
+                                android:layout_height="wrap_content"
+                                android:background="@color/sky"
+                                android:gravity="center_horizontal"
+                                android:padding="3dp"
+                                android:text="Tax Amt"
+                                android:textColor="@color/darkblack"
+                                android:textSize="12sp" />
+
+                            &lt;!&ndash;<TextView
+                                android:id="@+id/tv_TaxAmt"
+                                android:layout_width="80dp"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/txt_TaxAmt"
+                                android:gravity="center_horizontal"
+                                android:padding="3dp"
+                                android:textColor="@color/darkblack"
+                                android:textSize="12sp" />&ndash;&gt;
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:id="@+id/txt_VendorName"
+                                android:layout_width="80dp"
+                                android:layout_height="wrap_content"
+                                android:background="@color/sky"
+                                android:gravity="center_horizontal"
+                                android:padding="3dp"
+                                android:text="Vendor Name"
+                                android:textColor="@color/darkblack"
+                                android:textSize="12sp" />
+
+                            &lt;!&ndash;<TextView
+                                android:id="@+id/tv_CustomerName"
+                                android:layout_width="80dp"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/txt_VendorName"
+                                android:gravity="center_horizontal"
+                                android:padding="3dp"
+                                android:textColor="@color/darkblack"
+                                android:textSize="12sp" />&ndash;&gt;
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:id="@+id/txt_LRNo"
+                                android:layout_width="80dp"
+                                android:layout_height="wrap_content"
+                                android:background="@color/sky"
+                                android:gravity="center_horizontal"
+                                android:padding="3dp"
+                                android:text="LR No"
+                                android:textColor="@color/darkblack"
+                                android:textSize="12sp" />
+
+                            &lt;!&ndash;<TextView
+                                android:id="@+id/tv_LRNo"
+                                android:layout_width="80dp"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/txt_LRNo"
+                                android:gravity="center_horizontal"
+                                android:padding="3dp"
+                                android:textColor="@color/darkblack"
+                                android:textSize="12sp" />&ndash;&gt;
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:id="@+id/txt_TransporterName"
+                                android:layout_width="80dp"
+                                android:layout_height="wrap_content"
+                                android:background="@color/sky"
+                                android:gravity="center_horizontal"
+                                android:padding="3dp"
+                                android:text="Trans Name"
+                                android:textColor="@color/darkblack"
+                                android:textSize="12sp" />
+
+                            &lt;!&ndash;<TextView
+                                android:id="@+id/tv_TransporterName"
+                                android:layout_width="80dp"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/txt_TransporterName"
+                                android:gravity="center_horizontal"
+                                android:padding="3dp"
+                                android:textColor="@color/darkblack"
+                                android:textSize="12sp" />&ndash;&gt;
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:id="@+id/txt_LRDate"
+                                android:layout_width="80dp"
+                                android:layout_height="wrap_content"
+                                android:background="@color/sky"
+                                android:gravity="center_horizontal"
+                                android:padding="3dp"
+                                android:text="LR Date"
+                                android:textColor="@color/darkblack"
+                                android:textSize="12sp" />
+
+                            &lt;!&ndash;<TextView
+                                android:id="@+id/tv_LRDate"
+                                android:layout_width="80dp"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/txt_LRDate"
+                                android:gravity="center_horizontal"
+                                android:padding="3dp"
+                                android:textColor="@color/darkblack"
+                                android:textSize="12sp" />&ndash;&gt;
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:id="@+id/txt_NoOfParcels"
+                                android:layout_width="80dp"
+                                android:layout_height="wrap_content"
+                                android:background="@color/sky"
+                                android:gravity="center_horizontal"
+                                android:padding="3dp"
+                                android:text="No Of Parcels"
+                                android:textColor="@color/darkblack"
+                                android:textSize="12sp" />
+
+                           &lt;!&ndash; <TextView
+                                android:id="@+id/tv_NoOfParcels"
+                                android:layout_width="80dp"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/txt_NoOfParcels"
+                                android:gravity="center_horizontal"
+                                android:padding="3dp"
+                                android:textColor="@color/darkblack"
+                                android:textSize="12sp" />&ndash;&gt;
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:visibility="gone"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:id="@+id/txt_BalanceDue"
+                                android:layout_width="80dp"
+                                android:layout_height="wrap_content"
+                                android:background="@color/sky"
+                                android:gravity="center_horizontal"
+                                android:padding="3dp"
+                                android:text="Balance Due"
+                                android:textColor="@color/darkblack"
+                                android:textSize="12sp" />
+
+                            &lt;!&ndash;<TextView
+                                android:id="@+id/tv_BalanceDue"
+                                android:layout_width="80dp"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/txt_BalanceDue"
+                                android:gravity="center_horizontal"
+                                android:padding="3dp"
+                                android:textColor="@color/darkblack"
+                                android:textSize="12sp" />&ndash;&gt;
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:visibility="gone"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:id="@+id/txt_DocEntry"
+                                android:layout_width="80dp"
+                                android:layout_height="wrap_content"
+                                android:background="@color/sky"
+                                android:gravity="center_horizontal"
+                                android:padding="3dp"
+                                android:text="Doc Entry"
+                                android:textColor="@color/darkblack"
+                                android:textSize="12sp" />
+
+                            &lt;!&ndash;<TextView
+                                android:id="@+id/tv_DocEntry"
+                                android:layout_width="80dp"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/txt_DocEntry"
+                                android:gravity="center_horizontal"
+                                android:padding="3dp"
+                                android:textColor="@color/darkblack"
+                                android:textSize="12sp" />&ndash;&gt;
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:visibility="gone"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:id="@+id/txt_DueDate"
+                                android:layout_width="80dp"
+                                android:layout_height="wrap_content"
+                                android:background="@color/sky"
+                                android:gravity="center_horizontal"
+                                android:padding="3dp"
+                                android:text="Due Date"
+                                android:textColor="@color/darkblack"
+                                android:textSize="12sp" />
+
+                            &lt;!&ndash;<TextView
+                                android:id="@+id/tv_DueDate"
+                                android:layout_width="80dp"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/txt_DueDate"
+                                android:gravity="center_horizontal"
+                                android:padding="3dp"
+                                android:textColor="@color/darkblack"
+                                android:textSize="12sp" />&ndash;&gt;
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:id="@+id/btn_cust_purchase_sales_dwnld"
+                                android:layout_width="80dp"
+                                android:layout_height="wrap_content"
+                                android:padding="3dp"
+                                android:text="Download"
+                                android:background="@color/sky"
+                                android:gravity="center_horizontal"
+                                android:textColor="@color/darkblack"
+                                android:textSize="12sp" />
+
+                            &lt;!&ndash;<Button
+                                android:id="@+id/btn_cust_purchase_sales_download"
+                                android:layout_width="80dp"
+                                android:layout_height="25dp"
+                                android:layout_below="@+id/btn_cust_purchase_sales_dwnld"
+                                android:background="@drawable/button_design"
+                                android:gravity="center_horizontal"
+                                android:padding="2dp"
+                                android:layout_marginTop="3dp"
+                                android:text="Download"
+                                android:textAllCaps="false"
+                                android:textSize="8sp" />&ndash;&gt;
+
+                        </RelativeLayout>
+
+                        <TextView
+                            android:id="@+id/TextHide"
+                            android:layout_width="80dp"
+                            android:layout_height="wrap_content"
+                            android:background="@color/sky"
+                            android:gravity="center_horizontal"
+                            android:padding="3dp"
+                            android:text="Hide.."
+                            android:textColor="@color/white"
+                            android:textSize="12sp"
+                            android:textStyle="bold"
+                            android:visibility="visible" />
+
+                <ImageView
+                    android:visibility="gone"
+                    android:id="@+id/img_More"
+                    android:layout_width="90dp"
+                    android:background="@color/sky"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:src="@drawable/more_event_white" />
+
+                <HorizontalScrollView
+                    android:id="@+id/moreDetails"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                    </LinearLayout>
+
+                </HorizontalScrollView>
+
+            </LinearLayout>
+
+        </HorizontalScrollView>-->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rcvPurchageRegister"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:dividerHeight="6sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:visibility="gone"
+            android:id="@+id/purchase_basicll1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="4"
+            android:layout_margin="6dp"
+            android:background="@color/dark_blue"
+            android:stretchMode="columnWidth"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:layout_weight="1"
+                android:stretchMode="columnWidth"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tv_Date"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:gravity="center"
+                    android:padding="1dp"
+                    android:text="Total:"
+                    android:textColor="@color/white"
+                    android:textSize="9sp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_weight="1"
+                android:stretchMode="columnWidth"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tv_VoucherNumber"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:gravity="center"
+                    android:maxLines="1"
+                    android:padding="1dp"
+                    android:singleLine="true"
+                    android:textColor="@color/darkblack"
+                    android:textSize="9sp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_weight="1"
+                android:stretchMode="columnWidth"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tv_CustomerName"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:gravity="center"
+                    android:maxLines="1"
+                    android:maxLength="12"
+                    android:padding="1dp"
+                    android:singleLine="true"
+                    android:textColor="@color/darkblack"
+                    android:textSize="9sp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_weight="1"
+                android:stretchMode="columnWidth"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tv_BillAmt"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:gravity="center"
+                    android:textColor="@color/white"
+                    android:textSize="9sp" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/purchase1_basicl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="6dp"
+        android:orientation="horizontal"
+        android:background="@color/dark_blue">
+        <TextView
+            android:id="@+id/txt_purchaseTotal"
+            android:textSize="16sp"
+            android:gravity="center_vertical"
+            android:paddingEnd="10sp"
+            android:textStyle="bold"
+            android:textAlignment="textEnd"
+            android:textColor="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            tools:ignore="RtlCompat"/>
+
+    </LinearLayout>
+
+        <LinearLayout
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:background="@color/dark_green" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginStart="4dp"
+                android:gravity="center"
+                android:text="SHOWS CREDIT"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:textSize="12sp" />
+
+            <TextView
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="20dp"
+                android:background="@color/red" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginStart="4dp"
+                android:gravity="center"
+                android:text="SHOWS DEBIT"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:textSize="12sp" />
+
+        </LinearLayout>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            card_view:cardBackgroundColor="@android:color/transparent"
+            card_view:cardElevation="3dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_margin="8dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <!--<Button
+                    android:id="@+id/purchase_reg_PDFDOWNLOD"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="3dp"
+                    android:visibility="gone"
+                    android:text="@string/pdf" />-->
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/purchase_register_excelDownload"
+                    android:layout_width="wrap_content"
+                    android:layout_height="35dp"
+                    android:layout_margin="3dp"
+                    android:textColor="@color/white"
+                    android:background="@drawable/search_button_design"
+                    android:text="@string/excel" />
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+
+    </LinearLayout>
+</layout>

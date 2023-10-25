@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.cbs.ghgroup">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="false"
+        android:icon="@drawable/ic_logo_round"
+        android:label="@string/app_name"
+        android:requestLegacyExternalStorage="true"
+        android:roundIcon="@drawable/ic_logo_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.GhGroup"
+        android:usesCleartextTraffic="true"
+        tools:targetApi="m">
+        <activity
+            android:name=".activity.GhAgeingPieChartDetails"
+            android:exported="false" />
+        <activity
+            android:name=".activity.DirectAgeingPieChart"
+            android:exported="false" />
+        <activity
+            android:name=".activity.DirectAgeingGraph"
+            android:exported="false" />
+        <activity
+            android:name=".activity.GhAgeingPieChart"
+            android:exported="false" />
+        <activity
+            android:name=".activity.GraphMainDashboard"
+            android:exported="false" />
+        <activity
+            android:name=".activity.DirectBarGraphDetails"
+            android:exported="false" />
+        <activity
+            android:name=".activity.VendorDirectPendBillsDetails"
+            android:exported="false" />
+        <activity
+            android:name=".activity.VendorCommGenLedgerDetails"
+            android:exported="false" />
+        <activity
+            android:name=".activity.VendorDirectPendBills"
+            android:exported="false" />
+        <activity
+            android:name=".activity.VendorCommGenLedger"
+            android:exported="false" />
+        <activity
+            android:name=".activity.OrderReportDetails"
+            android:exported="false" />
+        <activity
+            android:name=".activity.CustomerBalance"
+            android:exported="false" />
+        <activity
+            android:name=".activity.OrderReport"
+            android:exported="false" />
+        <activity
+            android:name=".activity.OrderApprovalForm"
+            android:exported="false" />
+        <activity
+            android:name=".activity.OrderEntryForm"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.OrderForm"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.DirectAgeing_Graph_Details"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.GraphDetails"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.GhAgeingGraph"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.DirectBillingGraph"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.GHBilling_Graph_Details"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.Gh_Billing_Graph"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.Graph_Dashboard"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.VendPaymentCommDetails"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.VendGRDetailsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.VendBillDetailsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.VendPendBillActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.VendPdfActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.VendDebitNoteDetailsRegister"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.VendSaleRegDetails"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.ReceiptRegDetails"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.VendDebitNoteRegister"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.VendSaleRegister"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.VendPendingBillActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.VendorPaymentCommActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.VendorGRActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.VendorBillRegActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.VendGeneralLedgerActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.VendorDirectBillActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.Comm_GenLedger_Details"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.CommGeneralLedger"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.RoundPaymentActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.PayBillToBillActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.GHBillingPayNowActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.DirectPenDeatilsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.DirectPendingBillsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.PaymentCommDetailsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.PaymentCommunicationActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.BillRegisterDetailsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.GeneralReportActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.CustomerPDFActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.PaymentRegisterDetailsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.PurchesRegisterDeatilsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.CreditRegisterDetailsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.PendingBillDetailsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.PdfActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.MyProfileActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.CustomerGHBillActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.CustomerGenLedger"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.CreditNoteRegisterActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.PurchaseRegisterActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.PaymentRegisterActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.GRRegisterActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.BillRegisterActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.DebitNoteRegisterActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.SaleRegisterActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.ReceipetRegisterActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.PendingBillActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.GeneralLedgerActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.CustomerActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.UserManagementActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.ContactsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.DirectBillActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.GhBillingActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.VendorActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.DashBoardActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.VerifyOtpActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.LoginActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.SplashActivity"
+            android:exported="true"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths" />
+        </provider>
+    </application>
+
+</manifest>

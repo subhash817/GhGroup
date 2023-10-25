@@ -1,0 +1,588 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="6dp"
+    android:layout_marginEnd="6dp"
+    android:id="@+id/customPage"
+    android:orientation="vertical">
+
+    <!--<HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">-->
+
+    <LinearLayout
+        android:id="@+id/pay_comm_basicll"
+        android:stretchMode="columnWidth"
+        android:weightSum="4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:visibility="gone"
+            android:id="@+id/txt_genLed_cust_srNobasic"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:padding="3dp"
+            android:text="S.NO."
+            android:textColor="@color/darkblack"
+            android:textSize="14sp" />
+
+        <RelativeLayout
+            android:layout_weight="1"
+            android:stretchMode="columnWidth"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:visibility="gone"
+                android:id="@+id/txt_pc_PostingDate"
+                android:layout_width="85dp"
+                android:layout_height="wrap_content"
+                android:background="@color/sky"
+                android:gravity="center_horizontal"
+                android:padding="3dp"
+                android:text="Posting Date"
+                android:textColor="@color/darkblack"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/tv_PostingDate"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_below="@+id/txt_pc_PostingDate"
+                android:gravity="center"
+                android:padding="1dp"
+                android:textColor="@color/darkblack"
+                android:textSize="9sp"
+                android:textStyle="bold"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_weight="1"
+            android:stretchMode="columnWidth"
+            android:layout_gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="35dp">
+
+            <TextView
+                android:visibility="gone"
+                android:id="@+id/txt_pc_DocNumber"
+                android:layout_width="77dp"
+                android:layout_height="wrap_content"
+                android:background="@color/sky"
+                android:gravity="center_horizontal"
+                android:padding="3dp"
+                android:text="Vendor Bill No"
+                android:textColor="@color/darkblack"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/tv_VendorBillNo"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/txt_pc_DocNumber"
+                android:gravity="center"
+                android:textColor="@color/darkblack"
+                android:textSize="9sp"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_weight="1"
+            android:stretchMode="columnWidth"
+            android:layout_gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="35dp">
+
+            <TextView
+                android:visibility="gone"
+                android:id="@+id/txt_pc_BillDate"
+                android:layout_width="77dp"
+                android:layout_height="wrap_content"
+                android:background="@color/sky"
+                android:gravity="center_horizontal"
+                android:padding="3dp"
+                android:text="Vendor Name"
+                android:textColor="@color/darkblack"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/tv_VendorName"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/txt_pc_BillDate"
+                android:gravity="center"
+                android:textColor="@color/darkblack"
+                android:textSize="9sp"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:visibility="gone"
+            android:layout_weight="1"
+            android:stretchMode="columnWidth"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:visibility="gone"
+                android:id="@+id/txt_pc_VendorBillNo"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:background="@color/sky"
+                android:gravity="center_horizontal"
+                android:padding="3dp"
+                android:text="Doc No"
+                android:textColor="@color/darkblack"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/tv_DocNumber"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_below="@+id/txt_pc_VendorBillNo"
+                android:gravity="center"
+                android:padding="1dp"
+                android:textColor="@color/darkblack"
+                android:textSize="6sp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_weight="1"
+            android:stretchMode="columnWidth"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tv_TotalAmt"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:gravity="center"
+                android:padding="1dp"
+                android:textColor="@color/darkblack"
+                android:textSize="9sp"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+
+        <ImageView
+            android:visibility="gone"
+            android:id="@+id/img_More"
+            android:layout_width="29dp"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:src="@drawable/more_event_white" />
+
+        <HorizontalScrollView
+            android:id="@+id/moreDetails"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:visibility="gone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/txt_pc_Branch"
+                        android:layout_width="80dp"
+                        android:layout_height="wrap_content"
+                        android:background="@color/sky"
+                        android:gravity="center_horizontal"
+                        android:padding="3dp"
+                        android:text="Branch"
+                        android:textColor="@color/darkblack"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/tv_Branch"
+                        android:layout_width="80dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/txt_pc_Branch"
+                        android:gravity="center_horizontal"
+                        android:padding="3dp"
+                        android:textColor="@color/darkblack"
+                        android:textSize="12sp" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:visibility="gone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/txt_pc_VendorName"
+                        android:layout_width="80dp"
+                        android:layout_height="wrap_content"
+                        android:background="@color/sky"
+                        android:gravity="center_horizontal"
+                        android:padding="3dp"
+                        android:text="Bill Date"
+                        android:textColor="@color/darkblack"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/tv_BillDate"
+                        android:layout_width="80dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/txt_pc_VendorName"
+                        android:gravity="center_horizontal"
+                        android:padding="3dp"
+                        android:textColor="@color/darkblack"
+                        android:textSize="12sp" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:visibility="gone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/txt_pc_ModeOfPayment"
+                        android:layout_width="90dp"
+                        android:layout_height="wrap_content"
+                        android:background="@color/sky"
+                        android:gravity="center_horizontal"
+                        android:padding="3dp"
+                        android:text="Mode Payment"
+                        android:textColor="@color/darkblack"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/tv_ModeOfPayment"
+                        android:layout_width="90dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/txt_pc_ModeOfPayment"
+                        android:gravity="center_horizontal"
+                        android:padding="3dp"
+                        android:textColor="@color/darkblack"
+                        android:textSize="12sp" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:visibility="gone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/txt_pc_BillNO"
+                        android:layout_width="80dp"
+                        android:layout_height="wrap_content"
+                        android:background="@color/sky"
+                        android:gravity="center_horizontal"
+                        android:padding="3dp"
+                        android:text="Bill NO"
+                        android:textColor="@color/darkblack"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/tv_BillNO"
+                        android:layout_width="80dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/txt_pc_BillNO"
+                        android:gravity="center_horizontal"
+                        android:padding="3dp"
+                        android:textColor="@color/darkblack"
+                        android:textSize="12sp" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:visibility="gone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/txt_pc_Narration"
+                        android:layout_width="80dp"
+                        android:layout_height="wrap_content"
+                        android:background="@color/sky"
+                        android:gravity="center_horizontal"
+                        android:padding="3dp"
+                        android:text="Narration"
+                        android:textColor="@color/darkblack"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/tv_Narration"
+                        android:layout_width="80dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/txt_pc_Narration"
+                        android:gravity="center_horizontal"
+                        android:padding="3dp"
+                        android:textColor="@color/darkblack"
+                        android:textSize="12sp" />
+
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/TextHide"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:padding="3dp"
+                    android:text="Hide.."
+                    android:textColor="@color/sky"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+                    android:visibility="gone" />
+
+            </LinearLayout>
+
+        </HorizontalScrollView>
+
+    </LinearLayout>
+
+    <!-- </HorizontalScrollView>-->
+
+    <!--<ScrollView
+        android:id="@+id/layout"
+        android:layout_height="match_parent"
+        android:scrollbars="horizontal|vertical"
+        android:layout_width="match_parent"
+        android:layout_marginTop="5dip"
+        android:scrollbarStyle="outsideInset"
+        android:fillViewport="true">
+
+    <HorizontalScrollView
+        android:id="@+id/horizontalView"
+        android:layout_height="wrap_content"
+        android:scrollbars="horizontal|vertical"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="5dip">
+
+
+    <TableLayout
+        android:layout_centerHorizontal="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white">
+
+    <TableRow
+        android:background="@color/sky">
+
+        <TextView
+            android:visibility="gone"
+            android:id="@+id/txt_payComm_cust_srNo"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:padding="3dp"
+            android:text="S.NO."
+            android:gravity="center_horizontal"
+            android:textColor="@color/darkblack"
+            android:textSize="14sp" />
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:padding="3dp"
+            android:text="Posting Date"
+            android:gravity="center_horizontal"
+            android:textColor="@color/darkblack"
+            android:textSize="14sp" />
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:padding="3dp"
+            android:text="Doc Number"
+            android:gravity="center_horizontal"
+            android:textColor="@color/darkblack"
+            android:textSize="14sp" />
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:padding="3dp"
+            android:text="Bill Date"
+            android:gravity="center_horizontal"
+            android:textColor="@color/darkblack"
+            android:textSize="14sp" />
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:padding="3dp"
+            android:text="Vendor Bill No"
+            android:gravity="center_horizontal"
+            android:textColor="@color/darkblack"
+            android:textSize="14sp" />
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:padding="3dp"
+            android:text="Branch"
+            android:gravity="center_horizontal"
+            android:textColor="@color/darkblack"
+            android:textSize="14sp" />
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:padding="3dp"
+            android:text="Vendor Name"
+            android:gravity="center_horizontal"
+            android:textColor="@color/darkblack"
+            android:textSize="14sp" />
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:padding="3dp"
+            android:text="Total Amt"
+            android:gravity="center_horizontal"
+            android:textColor="@color/darkblack"
+            android:textSize="14sp" />
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:padding="3dp"
+            android:text="Mode Of Payment"
+            android:gravity="center_horizontal"
+            android:textColor="@color/darkblack"
+            android:textSize="14sp" />
+
+        <TextView
+            android:visibility="gone"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:padding="3dp"
+            android:text="Bill NO"
+            android:gravity="center_horizontal"
+            android:textColor="@color/darkblack"
+            android:textSize="14sp" />
+
+        <TextView
+            android:visibility="gone"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:padding="3dp"
+            android:text="Narration"
+            android:gravity="center_horizontal"
+            android:textColor="@color/darkblack"
+            android:textSize="14sp" />
+
+      </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:id="@+id/tv_PostingDate"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:padding="3dp"
+                android:gravity="center_horizontal"
+                android:textColor="@color/darkblack"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/tv_DocNumber"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:padding="3dp"
+                android:gravity="center_horizontal"
+                android:textColor="@color/darkblack"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/tv_BillDate"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:padding="3dp"
+                android:gravity="center_horizontal"
+                android:textColor="@color/darkblack"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/tv_VendorBillNo"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:padding="3dp"
+                android:gravity="center_horizontal"
+                android:textColor="@color/darkblack"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/tv_Branch"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:padding="3dp"
+                android:gravity="center_horizontal"
+                android:textColor="@color/darkblack"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/tv_VendorName"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:padding="3dp"
+                android:gravity="center_horizontal"
+                android:textColor="@color/darkblack"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/tv_TotalAmt"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:padding="3dp"
+                android:gravity="center_horizontal"
+                android:textColor="@color/darkblack"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/tv_ModeOfPayment"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:padding="3dp"
+                android:gravity="center_horizontal"
+                android:textColor="@color/darkblack"
+                android:textSize="14sp" />
+
+            <TextView
+                android:visibility="gone"
+                android:id="@+id/tv_BillNO"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:padding="3dp"
+                android:gravity="center_horizontal"
+                android:textColor="@color/darkblack"
+                android:textSize="14sp" />
+
+            <TextView
+                android:visibility="gone"
+                android:id="@+id/tv_Narration"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:padding="3dp"
+                android:gravity="center_horizontal"
+                android:textColor="@color/darkblack"
+                android:textSize="14sp" />
+
+        </TableRow>
+
+     </TableLayout>
+
+    </HorizontalScrollView>
+
+   </ScrollView>-->
+
+</LinearLayout>

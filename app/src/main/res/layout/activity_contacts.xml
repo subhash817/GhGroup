@@ -1,0 +1,3791 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity.ContactsActivity">
+
+    <include
+        android:id="@+id/header_back"
+        layout="@layout/custom_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:padding="10dp">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_marginTop="12dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/tv_dist_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="start"
+                        android:text="AHMEDABAD"
+                        android:textColor="@color/darkblack"
+                        android:textSize="20sp"
+                        android:padding="2dp"
+                        android:textStyle="bold"/>
+
+                    <TextView
+                        android:id="@+id/txt_address_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:padding="2dp"
+                        android:text="@string/ahmedabad_contact_address"
+                        android:textSize="18sp"
+                        android:textStyle="normal"
+                        android:textColor="@color/darkblack"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_marginTop="12dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/tv_marketing_dept"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="start"
+                        android:text="Marketing department:"
+                        android:textColor="@color/darkblack"
+                        android:textSize="20sp"
+                        android:padding="2dp"
+                        android:textStyle="normal"/>
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="2dp">
+                        <TextView
+                            android:id="@+id/tv_marketing_name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="2dp"
+                            android:text="Gorishankar"
+                            android:textSize="18sp"
+                            android:textStyle="normal"
+                            android:textColor="@color/gray"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="2dp"
+                            android:text=" - "
+                            android:textSize="18sp"
+                            android:textStyle="normal"
+                            android:textColor="@color/gray"/>
+
+                        <TextView
+                            android:id="@+id/tv_marketing_mobNo"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="2dp"
+                            android:layout_marginStart="4dp"
+                            android:text="9978634499"
+                            android:textSize="18sp"
+                            android:textStyle="normal"
+                            android:textColor="@color/gray"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/tv_marketing_name2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="2dp"
+                            android:text="Mahaveer"
+                            android:textSize="18sp"
+                            android:textStyle="normal"
+                            android:textColor="@color/gray"/>
+                        <TextView
+                            android:id="@+id/tv_marketing_mobNo1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="2dp"
+                            android:text=" - "
+                            android:textSize="18sp"
+                            android:textStyle="normal"
+                            android:textColor="@color/gray"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="2dp"
+                            android:layout_marginStart="4dp"
+                            android:text="9913444907"
+                            android:textSize="18sp"
+                            android:textStyle="normal"
+                            android:textColor="@color/gray"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_marginTop="12dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/tv_account_dept"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="start"
+                        android:text="Accounts department:"
+                        android:textColor="@color/darkblack"
+                        android:textSize="20sp"
+                        android:padding="2dp"
+                        android:textStyle="normal"/>
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="2dp">
+                        <TextView
+                            android:id="@+id/tv_accounts_name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="2dp"
+                            android:text="Janvi"
+                            android:textSize="18sp"
+                            android:textStyle="normal"
+                            android:textColor="@color/gray"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="2dp"
+                            android:text=" - "
+                            android:textSize="18sp"
+                            android:textStyle="normal"
+                            android:textColor="@color/gray"/>
+
+                        <TextView
+                            android:id="@+id/tv_account_mobNo"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="2dp"
+                            android:layout_marginStart="4dp"
+                            android:text="9978683099"
+                            android:textSize="18sp"
+                            android:textStyle="normal"
+                            android:textColor="@color/gray"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:id="@+id/tv_accounts_name1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="2dp"
+                            android:text="Romil"
+                            android:textSize="18sp"
+                            android:textStyle="normal"
+                            android:textColor="@color/gray"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="2dp"
+                            android:text=" - "
+                            android:textSize="18sp"
+                            android:textStyle="normal"
+                            android:textColor="@color/gray"/>
+
+                        <TextView
+                            android:id="@+id/tv_account_mobNo1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="2dp"
+                            android:layout_marginStart="4dp"
+                            android:text="9978683499"
+                            android:textSize="18sp"
+                            android:textStyle="normal"
+                            android:textColor="@color/gray"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_marginTop="12dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/tv_email_link"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="start"
+                        android:text="help.ghenterprisesinc@gmail.com"
+                        android:textColor="@color/dark_blue"
+                        android:textSize="20sp"
+                        android:padding="2dp"
+                        android:textStyle="normal"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <!--<View
+                android:background="#c0c0c0"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"/>-->
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_marginTop="12dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/tv_dist1_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="start"
+                        android:text="AMRAVATI"
+                        android:textColor="@color/darkblack"
+                        android:textSize="20sp"
+                        android:padding="2dp"
+                        android:textStyle="bold"/>
+
+                    <TextView
+                        android:id="@+id/txt_address1_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:padding="2dp"
+                        android:text="@string/amravati_contact_address"
+                        android:textSize="18sp"
+                        android:textStyle="normal"
+                        android:textColor="@color/gray"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_marginTop="12dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/tv_marketing1_dept"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="start"
+                        android:text="Marketing department:"
+                        android:textColor="@color/darkblack"
+                        android:textSize="20sp"
+                        android:padding="2dp"
+                        android:textStyle="normal"/>
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="2dp">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="2dp"
+                            android:text="Ramesh "
+                            android:textSize="18sp"
+                            android:textStyle="normal"
+                            android:textColor="@color/gray"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="2dp"
+                            android:text=" - "
+                            android:textSize="18sp"
+                            android:textStyle="normal"
+                            android:textColor="@color/gray"/>
+
+                        <TextView
+                            android:id="@+id/tv_marketing1_mobNo"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="2dp"
+                            android:layout_marginStart="4dp"
+                            android:text="8411888453"
+                            android:textSize="18sp"
+                            android:textStyle="normal"
+                            android:textColor="@color/gray"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:id="@+id/tv_marketing1_name2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="2dp"
+                            android:text="Arvind "
+                            android:textSize="18sp"
+                            android:textStyle="normal"
+                            android:textColor="@color/gray"/>
+                        <TextView
+                            android:id="@+id/tv_marketing1_mobNo1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="2dp"
+                            android:text=" - "
+                            android:textSize="18sp"
+                            android:textStyle="normal"
+                            android:textColor="@color/gray"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="2dp"
+                            android:layout_marginStart="4dp"
+                            android:text="7768008661"
+                            android:textSize="18sp"
+                            android:textStyle="normal"
+                            android:textColor="@color/gray"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_marginTop="12dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="start"
+                        android:text="Accounts department:"
+                        android:textColor="@color/darkblack"
+                        android:textSize="20sp"
+                        android:padding="3dp"
+                        android:textStyle="normal"/>
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="2dp">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="2dp"
+                            android:text="Bhavna "
+                            android:textSize="18sp"
+                            android:textStyle="normal"
+                            android:textColor="@color/gray"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="2dp"
+                            android:text=" - "
+                            android:textSize="18sp"
+                            android:textStyle="normal"
+                            android:textColor="@color/gray"/>
+
+                        <TextView
+                            android:id="@+id/tv_account1_mobNo"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="2dp"
+                            android:layout_marginStart="4dp"
+                            android:text="7263921017"
+                            android:textSize="18sp"
+                            android:textStyle="normal"
+                            android:textColor="@color/gray"/>
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_marginTop="12dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="start"
+                        android:text="ghamravati@gmail.com"
+                        android:textColor="@color/dark_blue"
+                        android:textSize="20sp"
+                        android:padding="2dp"
+                        android:textStyle="normal"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <!--<View
+                android:background="#c0c0c0"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"/>-->
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_marginTop="12dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="start"
+                        android:text="BANGALORE"
+                        android:textColor="@color/darkblack"
+                        android:textSize="20sp"
+                        android:padding="2dp"
+                        android:textStyle="bold"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:padding="2dp"
+                        android:text="@string/banglour_contact_address"
+                        android:textSize="18sp"
+                        android:textStyle="normal"
+                        android:textColor="@color/gray"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_marginTop="12dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="start"
+                        android:text="Marketing department:"
+                        android:textColor="@color/darkblack"
+                        android:textSize="20sp"
+                        android:padding="2dp"
+                        android:textStyle="normal"/>
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="2dp">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="2dp"
+                            android:text="Kishore "
+                            android:textSize="18sp"
+                            android:textStyle="normal"
+                            android:textColor="@color/gray"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="2dp"
+                            android:text=" - "
+                            android:textSize="18sp"
+                            android:textStyle="normal"
+                            android:textColor="@color/gray"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="2dp"
+                            android:layout_marginStart="4dp"
+                            android:text="9513800699"
+                            android:textSize="18sp"
+                            android:textStyle="normal"
+                            android:textColor="@color/gray"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="2dp"
+                            android:text="Narayan "
+                            android:textSize="18sp"
+                            android:textStyle="normal"
+                            android:textColor="@color/gray"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="2dp"
+                            android:text=" - "
+                            android:textSize="18sp"
+                            android:textStyle="normal"
+                            android:textColor="@color/gray"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="2dp"
+                            android:layout_marginStart="4dp"
+                            android:text="9513800599"
+                            android:textSize="18sp"
+                            android:textStyle="normal"
+                            android:textColor="@color/gray"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_marginTop="12dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="start"
+                        android:text="Accounts department:"
+                        android:textColor="@color/darkblack"
+                        android:textSize="20sp"
+                        android:padding="2dp"
+                        android:textStyle="normal"/>
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="2dp">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="2dp"
+                            android:text="Mamta "
+                            android:textSize="18sp"
+                            android:textStyle="normal"
+                            android:textColor="@color/gray"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="2dp"
+                            android:text=" - "
+                            android:textSize="18sp"
+                            android:textStyle="normal"
+                            android:textColor="@color/gray"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="2dp"
+                            android:layout_marginStart="4dp"
+                            android:text="9513800299"
+                            android:textSize="18sp"
+                            android:textStyle="normal"
+                            android:textColor="@color/gray"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="2dp"
+                            android:text="Billing section"
+                            android:textSize="18sp"
+                            android:textStyle="normal"
+                            android:textColor="@color/gray"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="2dp"
+                            android:text=" - "
+                            android:textSize="18sp"
+                            android:textStyle="normal"
+                            android:textColor="@color/gray"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="2dp"
+                            android:layout_marginStart="4dp"
+                            android:text="9513800047"
+                            android:textSize="18sp"
+                            android:textStyle="normal"
+                            android:textColor="@color/gray"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_marginTop="12dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="start"
+                        android:text="ghagencyblr@gmail.com"
+                        android:textColor="@color/dark_blue"
+                        android:textSize="20sp"
+                        android:padding="2dp"
+                        android:textStyle="normal"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <!--<View
+                android:background="#c0c0c0"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"/>-->
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_marginTop="12dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="start"
+                        android:text="INDORE"
+                        android:textColor="@color/darkblack"
+                        android:textSize="20sp"
+                        android:padding="2dp"
+                        android:textStyle="bold"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:padding="2dp"
+                        android:text="@string/indore_contact_address"
+                        android:textSize="18sp"
+                        android:textStyle="normal"
+                        android:textColor="@color/gray"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_marginTop="12dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="start"
+                        android:text="Marketing department:"
+                        android:textColor="@color/darkblack"
+                        android:textSize="20sp"
+                        android:padding="2dp"
+                        android:textStyle="normal"/>
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="2dp">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="2dp"
+                            android:text="Vishal "
+                            android:textSize="18sp"
+                            android:textStyle="normal"
+                            android:textColor="@color/gray"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="2dp"
+                            android:text=" - "
+                            android:textSize="18sp"
+                            android:textStyle="normal"
+                            android:textColor="@color/gray"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="2dp"
+                            android:layout_marginStart="4dp"
+                            android:text="9770501715"
+                            android:textSize="18sp"
+                            android:textStyle="normal"
+                            android:textColor="@color/gray"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="2dp"
+                            android:text="Uttam  "
+                            android:textSize="18sp"
+                            android:textStyle="normal"
+                            android:textColor="@color/gray"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="2dp"
+                            android:text=" - "
+                            android:textSize="18sp"
+                            android:textStyle="normal"
+                            android:textColor="@color/gray"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="2dp"
+                            android:layout_marginStart="4dp"
+                            android:text="9770501719"
+                            android:textSize="18sp"
+                            android:textStyle="normal"
+                            android:textColor="@color/gray"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_marginTop="12dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="start"
+                        android:text="Accounts department:"
+                        android:textColor="@color/darkblack"
+                        android:textSize="20sp"
+                        android:padding="2dp"
+                        android:textStyle="normal"/>
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="2dp">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="2dp"
+                            android:text="Ankita  "
+                            android:textSize="18sp"
+                            android:textStyle="normal"
+                            android:textColor="@color/gray"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="2dp"
+                            android:text=" - "
+                            android:textSize="18sp"
+                            android:textStyle="normal"
+                            android:textColor="@color/gray"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="2dp"
+                            android:layout_marginStart="4dp"
+                            android:text="9770501721"
+                            android:textSize="18sp"
+                            android:textStyle="normal"
+                            android:textColor="@color/gray"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="2dp"
+                            android:text="Mukesh "
+                            android:textSize="18sp"
+                            android:textStyle="normal"
+                            android:textColor="@color/gray"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="2dp"
+                            android:text=" - "
+                            android:textSize="18sp"
+                            android:textStyle="normal"
+                            android:textColor="@color/gray"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="2dp"
+                            android:layout_marginStart="4dp"
+                            android:text="9770501723"
+                            android:textSize="18sp"
+                            android:textStyle="normal"
+                            android:textColor="@color/gray"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_marginTop="12dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="start"
+                        android:text="ghenterprisesindore@gmail.com"
+                        android:textColor="@color/dark_blue"
+                        android:textSize="20sp"
+                        android:padding="2dp"
+                        android:textStyle="normal"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <!--<View
+                android:background="#c0c0c0"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"/>-->
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_marginTop="12dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="start"
+                        android:text="JABALPUR"
+                        android:textColor="@color/darkblack"
+                        android:textSize="20sp"
+                        android:padding="2dp"
+                        android:textStyle="bold"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:padding="2dp"
+                        android:text="@string/jabalpur_contact_address"
+                        android:textSize="18sp"
+                        android:textStyle="normal"
+                        android:textColor="@color/gray"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_marginTop="12dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="start"
+                        android:text="Marketing department:"
+                        android:textColor="@color/darkblack"
+                        android:textSize="20sp"
+                        android:padding="2dp"
+                        android:textStyle="normal"/>
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="2dp">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="2dp"
+                            android:text="Dilip "
+                            android:textSize="18sp"
+                            android:textStyle="normal"
+                            android:textColor="@color/gray"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="2dp"
+                            android:text=" - "
+                            android:textSize="18sp"
+                            android:textStyle="normal"
+                            android:textColor="@color/gray"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="2dp"
+                            android:layout_marginStart="4dp"
+                            android:text="9770501729"
+                            android:textSize="18sp"
+                            android:textStyle="normal"
+                            android:textColor="@color/gray"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="2dp"
+                            android:text="Heera  "
+                            android:textSize="18sp"
+                            android:textStyle="normal"
+                            android:textColor="@color/gray"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="2dp"
+                            android:text=" - "
+                            android:textSize="18sp"
+                            android:textStyle="normal"
+                            android:textColor="@color/gray"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="2dp"
+                            android:layout_marginStart="4dp"
+                            android:text="9770501730"
+                            android:textSize="18sp"
+                            android:textStyle="normal"
+                            android:textColor="@color/gray"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_marginTop="12dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="start"
+                        android:text="Accounts department:"
+                        android:textColor="@color/darkblack"
+                        android:textSize="20sp"
+                        android:padding="2dp"
+                        android:textStyle="normal"/>
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="2dp">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="2dp"
+                            android:text="Ravi  "
+                            android:textSize="18sp"
+                            android:textStyle="normal"
+                            android:textColor="@color/gray"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="2dp"
+                            android:text=" - "
+                            android:textSize="18sp"
+                            android:textStyle="normal"
+                            android:textColor="@color/gray"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="2dp"
+                            android:layout_marginStart="4dp"
+                            android:text="9770501728"
+                            android:textSize="18sp"
+                            android:textStyle="normal"
+                            android:textColor="@color/gray"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_marginTop="12dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="start"
+                        android:text="ghjabalpur@gmail.com"
+                        android:textColor="@color/dark_blue"
+                        android:textSize="20sp"
+                        android:padding="2dp"
+                        android:textStyle="normal"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <!--<View
+                android:background="#c0c0c0"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"/>-->
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_marginTop="12dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="start"
+                        android:text="JAIPUR"
+                        android:textColor="@color/darkblack"
+                        android:textSize="20sp"
+                        android:padding="2dp"
+                        android:textStyle="bold"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:padding="2dp"
+                        android:text="@string/jaipur_contact_address"
+                        android:textSize="18sp"
+                        android:textStyle="normal"
+                        android:textColor="@color/gray"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_marginTop="12dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="start"
+                        android:text="Marketing department:"
+                        android:textColor="@color/darkblack"
+                        android:textSize="20sp"
+                        android:padding="2dp"
+                        android:textStyle="normal"/>
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="2dp">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="2dp"
+                            android:text="Mohit "
+                            android:textSize="18sp"
+                            android:textStyle="normal"
+                            android:textColor="@color/gray"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="2dp"
+                            android:text=" - "
+                            android:textSize="18sp"
+                            android:textStyle="normal"
+                            android:textColor="@color/gray"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="2dp"
+                            android:layout_marginStart="4dp"
+                            android:text="9799951945"
+                            android:textSize="18sp"
+                            android:textStyle="normal"
+                            android:textColor="@color/gray"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:visibility="gone"
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="3dp"
+                            android:text="Govind Singh "
+                            android:textSize="18sp"
+                            android:textStyle="normal"
+                            android:textColor="@color/gray"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="3dp"
+                            android:text=" - "
+                            android:textSize="18sp"
+                            android:textStyle="normal"
+                            android:textColor="@color/gray"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="3dp"
+                            android:layout_marginStart="4dp"
+                            android:text="9799939580"
+                            android:textSize="18sp"
+                            android:textStyle="normal"
+                            android:textColor="@color/gray"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_marginTop="12dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="start"
+                        android:text="Accounts department:"
+                        android:textColor="@color/darkblack"
+                        android:textSize="20sp"
+                        android:padding="2dp"
+                        android:textStyle="normal"/>
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="2dp">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="2dp"
+                            android:text="Billing  "
+                            android:textSize="18sp"
+                            android:textStyle="normal"
+                            android:textColor="@color/gray"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="2dp"
+                            android:text=" - "
+                            android:textSize="18sp"
+                            android:textStyle="normal"
+                            android:textColor="@color/gray"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="2dp"
+                            android:layout_marginStart="4dp"
+                            android:text="9799951953"
+                            android:textSize="18sp"
+                            android:textStyle="normal"
+                            android:textColor="@color/gray"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_marginTop="12dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="start"
+                        android:text="jaipurghagency@gmail.com"
+                        android:textColor="@color/dark_blue"
+                        android:textSize="20sp"
+                        android:padding="2dp"
+                        android:textStyle="normal"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+           <!-- <View
+                android:background="#c0c0c0"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"/>-->
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_marginTop="12dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="start"
+                        android:text="KANPUR"
+                        android:textColor="@color/darkblack"
+                        android:textSize="20sp"
+                        android:padding="2dp"
+                        android:textStyle="bold"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:padding="2dp"
+                        android:text="@string/kanpur_contact_address"
+                        android:textSize="18sp"
+                        android:textStyle="normal"
+                        android:textColor="@color/gray"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_marginTop="12dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="start"
+                        android:text="Marketing department:"
+                        android:textColor="@color/darkblack"
+                        android:textSize="20sp"
+                        android:padding="2dp"
+                        android:textStyle="normal"/>
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="2dp">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="2dp"
+                            android:text="Praveen "
+                            android:textSize="18sp"
+                            android:textStyle="normal"
+                            android:textColor="@color/gray"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="2dp"
+                            android:text=" - "
+                            android:textSize="18sp"
+                            android:textStyle="normal"
+                            android:textColor="@color/gray"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="2dp"
+                            android:layout_marginStart="4dp"
+                            android:text="9115079990"
+                            android:textSize="18sp"
+                            android:textStyle="normal"
+                            android:textColor="@color/gray"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="2dp"
+                            android:text="Karthik  "
+                            android:textSize="18sp"
+                            android:textStyle="normal"
+                            android:textColor="@color/gray"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="2dp"
+                            android:text=" - "
+                            android:textSize="18sp"
+                            android:textStyle="normal"
+                            android:textColor="@color/gray"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="2dp"
+                            android:layout_marginStart="4dp"
+                            android:text="9115059990"
+                            android:textSize="18sp"
+                            android:textStyle="normal"
+                            android:textColor="@color/gray"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_marginTop="12dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="start"
+                        android:text="Accounts department:"
+                        android:textColor="@color/darkblack"
+                        android:textSize="20sp"
+                        android:padding="2dp"
+                        android:textStyle="normal"/>
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="2dp">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="2dp"
+                            android:text="Accounts  "
+                            android:textSize="18sp"
+                            android:textStyle="normal"
+                            android:textColor="@color/gray"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="2dp"
+                            android:text=" - "
+                            android:textSize="18sp"
+                            android:textStyle="normal"
+                            android:textColor="@color/gray"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="2dp"
+                            android:layout_marginStart="4dp"
+                            android:text="9115049990"
+                            android:textSize="18sp"
+                            android:textStyle="normal"
+                            android:textColor="@color/gray"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="2dp">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="2dp"
+                            android:text="Billing section  "
+                            android:textSize="18sp"
+                            android:textStyle="normal"
+                            android:textColor="@color/gray"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="2dp"
+                            android:text=" - "
+                            android:textSize="18sp"
+                            android:textStyle="normal"
+                            android:textColor="@color/gray"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="2dp"
+                            android:layout_marginStart="4dp"
+                            android:text="9935171688"
+                            android:textSize="18sp"
+                            android:textStyle="normal"
+                            android:textColor="@color/gray"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_marginTop="12dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="start"
+                        android:text="ghagencies.kanpur@gmail.com"
+                        android:textColor="@color/dark_blue"
+                        android:textSize="20sp"
+                        android:padding="2dp"
+                        android:textStyle="normal"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <!--<View
+                android:background="#c0c0c0"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"/>-->
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_marginTop="12dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="start"
+                        android:text="KOLKATA"
+                        android:textColor="@color/darkblack"
+                        android:textSize="20sp"
+                        android:padding="2dp"
+                        android:textStyle="bold"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:padding="2dp"
+                        android:text="@string/kolkata_contact_address"
+                        android:textSize="18sp"
+                        android:textStyle="normal"
+                        android:textColor="@color/gray"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_marginTop="12dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="start"
+                        android:text="Marketing department:"
+                        android:textColor="@color/darkblack"
+                        android:textSize="20sp"
+                        android:padding="2dp"
+                        android:textStyle="normal"/>
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="2dp">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="2dp"
+                            android:text="Uttam "
+                            android:textSize="18sp"
+                            android:textStyle="normal"
+                            android:textColor="@color/gray"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="2dp"
+                            android:text=" - "
+                            android:textSize="18sp"
+                            android:textStyle="normal"
+                            android:textColor="@color/gray"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="2dp"
+                            android:layout_marginStart="4dp"
+                            android:text="9874454217"
+                            android:textSize="18sp"
+                            android:textStyle="normal"
+                            android:textColor="@color/gray"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_marginTop="12dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="start"
+                        android:text="Accounts department:"
+                        android:textColor="@color/darkblack"
+                        android:textSize="20sp"
+                        android:padding="2dp"
+                        android:textStyle="normal"/>
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="2dp">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="2dp"
+                            android:text="Arpit  "
+                            android:textSize="18sp"
+                            android:textStyle="normal"
+                            android:textColor="@color/gray"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="2dp"
+                            android:text=" - "
+                            android:textSize="18sp"
+                            android:textStyle="normal"
+                            android:textColor="@color/gray"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="2dp"
+                            android:layout_marginStart="4dp"
+                            android:text="7044292990"
+                            android:textSize="18sp"
+                            android:textStyle="normal"
+                            android:textColor="@color/gray"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_marginTop="12dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="start"
+                        android:text="ghaplkol@gmail.com"
+                        android:textColor="@color/dark_blue"
+                        android:textSize="20sp"
+                        android:padding="2dp"
+                        android:textStyle="normal"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+           <!-- <View
+                android:background="#c0c0c0"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"/>-->
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_marginTop="12dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="start"
+                        android:text="LUDHIANA"
+                        android:textColor="@color/darkblack"
+                        android:textSize="20sp"
+                        android:padding="2dp"
+                        android:textStyle="bold"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:padding="2dp"
+                        android:text="@string/ludhiana_contact_address"
+                        android:textSize="18sp"
+                        android:textStyle="normal"
+                        android:textColor="@color/gray"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_marginTop="12dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="start"
+                        android:text="Marketing department:"
+                        android:textColor="@color/darkblack"
+                        android:textSize="20sp"
+                        android:padding="2dp"
+                        android:textStyle="normal"/>
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="2dp">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="2dp"
+                            android:text="Sunny "
+                            android:textSize="18sp"
+                            android:textStyle="normal"
+                            android:textColor="@color/gray"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="2dp"
+                            android:text=" - "
+                            android:textSize="18sp"
+                            android:textStyle="normal"
+                            android:textColor="@color/gray"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="2dp"
+                            android:layout_marginStart="4dp"
+                            android:text="7707800443"
+                            android:textSize="18sp"
+                            android:textStyle="normal"
+                            android:textColor="@color/gray"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="2dp"
+                            android:text="Vipul  "
+                            android:textSize="18sp"
+                            android:textStyle="normal"
+                            android:textColor="@color/gray"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="2dp"
+                            android:text=" - "
+                            android:textSize="18sp"
+                            android:textStyle="normal"
+                            android:textColor="@color/gray"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="2dp"
+                            android:layout_marginStart="4dp"
+                            android:text="9501114297"
+                            android:textSize="18sp"
+                            android:textStyle="normal"
+                            android:textColor="@color/gray"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_marginTop="12dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="start"
+                        android:text="Accounts department:"
+                        android:textColor="@color/darkblack"
+                        android:textSize="20sp"
+                        android:padding="2dp"
+                        android:textStyle="normal"/>
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="2dp">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="2dp"
+                            android:text="Manish "
+                            android:textSize="18sp"
+                            android:textStyle="normal"
+                            android:textColor="@color/gray"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="2dp"
+                            android:text=" - "
+                            android:textSize="18sp"
+                            android:textStyle="normal"
+                            android:textColor="@color/gray"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="2dp"
+                            android:layout_marginStart="4dp"
+                            android:text="6239232366"
+                            android:textSize="18sp"
+                            android:textStyle="normal"
+                            android:textColor="@color/gray"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="2dp">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="2dp"
+                            android:text="Vandana "
+                            android:textSize="18sp"
+                            android:textStyle="normal"
+                            android:textColor="@color/gray"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="2dp"
+                            android:text=" - "
+                            android:textSize="18sp"
+                            android:textStyle="normal"
+                            android:textColor="@color/gray"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="2dp"
+                            android:layout_marginStart="4dp"
+                            android:text="9781343999"
+                            android:textSize="18sp"
+                            android:textStyle="normal"
+                            android:textColor="@color/gray"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_marginTop="12dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="start"
+                        android:text="ldhghagenciesinc@gmail.com"
+                        android:textColor="@color/dark_blue"
+                        android:textSize="20sp"
+                        android:padding="2dp"
+                        android:textStyle="normal"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <!--<View
+                android:background="#c0c0c0"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"/>-->
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_marginTop="12dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="start"
+                        android:text="MUMBAI"
+                        android:textColor="@color/darkblack"
+                        android:textSize="20sp"
+                        android:padding="2dp"
+                        android:textStyle="bold"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:padding="2dp"
+                        android:text="@string/mumbai_contact_address"
+                        android:textSize="18sp"
+                        android:textStyle="normal"
+                        android:textColor="@color/gray"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_marginTop="12dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="start"
+                        android:text="Marketing department:"
+                        android:textColor="@color/darkblack"
+                        android:textSize="20sp"
+                        android:padding="2dp"
+                        android:textStyle="normal"/>
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="2dp">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="2dp"
+                            android:text="Bharat "
+                            android:textSize="18sp"
+                            android:textStyle="normal"
+                            android:textColor="@color/gray"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="2dp"
+                            android:text=" - "
+                            android:textSize="18sp"
+                            android:textStyle="normal"
+                            android:textColor="@color/gray"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="2dp"
+                            android:layout_marginStart="4dp"
+                            android:text="9137155580"
+                            android:textSize="18sp"
+                            android:textStyle="normal"
+                            android:textColor="@color/gray"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="2dp"
+                            android:text="Virender  "
+                            android:textSize="18sp"
+                            android:textStyle="normal"
+                            android:textColor="@color/gray"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="2dp"
+                            android:text=" - "
+                            android:textSize="18sp"
+                            android:textStyle="normal"
+                            android:textColor="@color/gray"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="2dp"
+                            android:layout_marginStart="4dp"
+                            android:text="9321168009"
+                            android:textSize="18sp"
+                            android:textStyle="normal"
+                            android:textColor="@color/gray"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_marginTop="12dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="start"
+                        android:text="Accounts department:"
+                        android:textColor="@color/darkblack"
+                        android:textSize="20sp"
+                        android:padding="2dp"
+                        android:textStyle="normal"/>
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="2dp">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="2dp"
+                            android:text="Priya "
+                            android:textSize="18sp"
+                            android:textStyle="normal"
+                            android:textColor="@color/gray"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="2dp"
+                            android:text=" - "
+                            android:textSize="18sp"
+                            android:textStyle="normal"
+                            android:textColor="@color/gray"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="2dp"
+                            android:layout_marginStart="4dp"
+                            android:text="7506652149"
+                            android:textSize="18sp"
+                            android:textStyle="normal"
+                            android:textColor="@color/gray"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="2dp">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="2dp"
+                            android:text="Chirag "
+                            android:textSize="18sp"
+                            android:textStyle="normal"
+                            android:textColor="@color/gray"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="2dp"
+                            android:text=" - "
+                            android:textSize="18sp"
+                            android:textStyle="normal"
+                            android:textColor="@color/gray"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="2dp"
+                            android:layout_marginStart="4dp"
+                            android:text="9136494002"
+                            android:textSize="18sp"
+                            android:textStyle="normal"
+                            android:textColor="@color/gray"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_marginTop="12dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="start"
+                        android:text="billingservice@mumbaighagencies.com"
+                        android:textColor="@color/dark_blue"
+                        android:textSize="20sp"
+                        android:padding="2dp"
+                        android:textStyle="normal"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+           <!-- <View
+                android:background="#c0c0c0"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"/>-->
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_marginTop="12dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="start"
+                        android:text="NAGPUR"
+                        android:textColor="@color/darkblack"
+                        android:textSize="20sp"
+                        android:padding="2dp"
+                        android:textStyle="bold"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:padding="2dp"
+                        android:text="@string/nagpur_contact_address"
+                        android:textSize="18sp"
+                        android:textStyle="normal"
+                        android:textColor="@color/gray"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_marginTop="12dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="start"
+                        android:text="Marketing department:"
+                        android:textColor="@color/darkblack"
+                        android:textSize="20sp"
+                        android:padding="2dp"
+                        android:textStyle="normal"/>
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="2dp">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="2dp"
+                            android:text="Preetam "
+                            android:textSize="18sp"
+                            android:textStyle="normal"
+                            android:textColor="@color/gray"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="2dp"
+                            android:text=" - "
+                            android:textSize="18sp"
+                            android:textStyle="normal"
+                            android:textColor="@color/gray"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="2dp"
+                            android:layout_marginStart="4dp"
+                            android:text="8411888457"
+                            android:textSize="18sp"
+                            android:textStyle="normal"
+                            android:textColor="@color/gray"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="2dp"
+                            android:text="Kailash  "
+                            android:textSize="18sp"
+                            android:textStyle="normal"
+                            android:textColor="@color/gray"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="2dp"
+                            android:text=" - "
+                            android:textSize="18sp"
+                            android:textStyle="normal"
+                            android:textColor="@color/gray"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="2dp"
+                            android:layout_marginStart="4dp"
+                            android:text="8411888460"
+                            android:textSize="18sp"
+                            android:textStyle="normal"
+                            android:textColor="@color/gray"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_marginTop="12dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="start"
+                        android:text="Accounts department:"
+                        android:textColor="@color/darkblack"
+                        android:textSize="20sp"
+                        android:padding="2dp"
+                        android:textStyle="normal"/>
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="2dp">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="2dp"
+                            android:text="Manish "
+                            android:textSize="18sp"
+                            android:textStyle="normal"
+                            android:textColor="@color/gray"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="2dp"
+                            android:text=" - "
+                            android:textSize="18sp"
+                            android:textStyle="normal"
+                            android:textColor="@color/gray"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="2dp"
+                            android:layout_marginStart="4dp"
+                            android:text="8411888455"
+                            android:textSize="18sp"
+                            android:textStyle="normal"
+                            android:textColor="@color/gray"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="2dp">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="2dp"
+                            android:text="Namrata "
+                            android:textSize="18sp"
+                            android:textStyle="normal"
+                            android:textColor="@color/gray"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="2dp"
+                            android:text=" - "
+                            android:textSize="18sp"
+                            android:textStyle="normal"
+                            android:textColor="@color/gray"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="2dp"
+                            android:layout_marginStart="4dp"
+                            android:text="7768008667"
+                            android:textSize="18sp"
+                            android:textStyle="normal"
+                            android:textColor="@color/gray"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_marginTop="12dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="start"
+                        android:text="ghenterprises2018@gmail.com"
+                        android:textColor="@color/dark_blue"
+                        android:textSize="20sp"
+                        android:padding="2dp"
+                        android:textStyle="normal"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+           <!-- <View
+                android:background="#c0c0c0"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"/>-->
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_marginTop="12dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="start"
+                        android:text="DELHI - GANDHI NAGAR"
+                        android:textColor="@color/darkblack"
+                        android:textSize="20sp"
+                        android:padding="2dp"
+                        android:textStyle="bold"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:padding="2dp"
+                        android:text="@string/delhi_gandhinagar_contact_address"
+                        android:textSize="18sp"
+                        android:textStyle="normal"
+                        android:textColor="@color/gray"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_marginTop="12dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="start"
+                        android:text="Marketing department:"
+                        android:textColor="@color/darkblack"
+                        android:textSize="20sp"
+                        android:padding="2dp"
+                        android:textStyle="normal"/>
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="2dp">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="2dp"
+                            android:text="Manoj "
+                            android:textSize="18sp"
+                            android:textStyle="normal"
+                            android:textColor="@color/gray"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="2dp"
+                            android:text=" - "
+                            android:textSize="18sp"
+                            android:textStyle="normal"
+                            android:textColor="@color/gray"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="2dp"
+                            android:layout_marginStart="4dp"
+                            android:text="9971952205"
+                            android:textSize="18sp"
+                            android:textStyle="normal"
+                            android:textColor="@color/gray"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="2dp"
+                            android:text="Manish  "
+                            android:textSize="18sp"
+                            android:textStyle="normal"
+                            android:textColor="@color/gray"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="2dp"
+                            android:text=" - "
+                            android:textSize="18sp"
+                            android:textStyle="normal"
+                            android:textColor="@color/gray"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="2dp"
+                            android:layout_marginStart="4dp"
+                            android:text="9717298882"
+                            android:textSize="18sp"
+                            android:textStyle="normal"
+                            android:textColor="@color/gray"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_marginTop="12dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="start"
+                        android:text="Accounts department:"
+                        android:textColor="@color/darkblack"
+                        android:textSize="20sp"
+                        android:padding="2dp"
+                        android:textStyle="normal"/>
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="2dp">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="2dp"
+                            android:text="Sanjay "
+                            android:textSize="18sp"
+                            android:textStyle="normal"
+                            android:textColor="@color/gray"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="2dp"
+                            android:text=" - "
+                            android:textSize="18sp"
+                            android:textStyle="normal"
+                            android:textColor="@color/gray"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="2dp"
+                            android:layout_marginStart="4dp"
+                            android:text="8882548189"
+                            android:textSize="18sp"
+                            android:textStyle="normal"
+                            android:textColor="@color/gray"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="2dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="2dp"
+                            android:text="Arun "
+                            android:textSize="18sp"
+                            android:textStyle="normal"
+                            android:textColor="@color/gray"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="2dp"
+                            android:text=" - "
+                            android:textSize="18sp"
+                            android:textStyle="normal"
+                            android:textColor="@color/gray"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="2dp"
+                            android:layout_marginStart="4dp"
+                            android:text="9625559542"
+                            android:textSize="18sp"
+                            android:textStyle="normal"
+                            android:textColor="@color/gray"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_marginTop="12dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="start"
+                        android:text="ghagenciesinc0709@gmail.com"
+                        android:textColor="@color/dark_blue"
+                        android:textSize="20sp"
+                        android:padding="2dp"
+                        android:textStyle="normal"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <!--<View
+                android:background="#c0c0c0"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"/>-->
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_marginTop="12dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="start"
+                        android:text="DELHI - TANK ROAD"
+                        android:textColor="@color/darkblack"
+                        android:textSize="20sp"
+                        android:padding="2dp"
+                        android:textStyle="bold"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:padding="2dp"
+                        android:text="@string/delhi_tankroad_contact_address"
+                        android:textSize="18sp"
+                        android:textStyle="normal"
+                        android:textColor="@color/gray"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_marginTop="12dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="start"
+                        android:text="Marketing department:"
+                        android:textColor="@color/darkblack"
+                        android:textSize="20sp"
+                        android:padding="2dp"
+                        android:textStyle="normal"/>
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="2dp">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="2dp"
+                            android:text="Ajay "
+                            android:textSize="18sp"
+                            android:textStyle="normal"
+                            android:textColor="@color/gray"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="2dp"
+                            android:text=" - "
+                            android:textSize="18sp"
+                            android:textStyle="normal"
+                            android:textColor="@color/gray"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="2dp"
+                            android:layout_marginStart="4dp"
+                            android:text="8860646191"
+                            android:textSize="18sp"
+                            android:textStyle="normal"
+                            android:textColor="@color/gray"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="2dp"
+                            android:text="Sunil  "
+                            android:textSize="18sp"
+                            android:textStyle="normal"
+                            android:textColor="@color/gray"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="2dp"
+                            android:text=" - "
+                            android:textSize="18sp"
+                            android:textStyle="normal"
+                            android:textColor="@color/gray"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="2dp"
+                            android:layout_marginStart="4dp"
+                            android:text="8860637723"
+                            android:textSize="18sp"
+                            android:textStyle="normal"
+                            android:textColor="@color/gray"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_marginTop="12dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="start"
+                        android:text="Accounts department:"
+                        android:textColor="@color/darkblack"
+                        android:textSize="20sp"
+                        android:padding="2dp"
+                        android:textStyle="normal"/>
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="2dp">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="2dp"
+                            android:text="Bobby "
+                            android:textSize="18sp"
+                            android:textStyle="normal"
+                            android:textColor="@color/gray"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="2dp"
+                            android:text=" - "
+                            android:textSize="18sp"
+                            android:textStyle="normal"
+                            android:textColor="@color/gray"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="2dp"
+                            android:layout_marginStart="4dp"
+                            android:text="9667792906"
+                            android:textSize="18sp"
+                            android:textStyle="normal"
+                            android:textColor="@color/gray"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="2dp">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="2dp"
+                            android:text="Jatin "
+                            android:textSize="18sp"
+                            android:textStyle="normal"
+                            android:textColor="@color/gray"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="2dp"
+                            android:text=" - "
+                            android:textSize="18sp"
+                            android:textStyle="normal"
+                            android:textColor="@color/gray"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="2dp"
+                            android:layout_marginStart="4dp"
+                            android:text="9667792907"
+                            android:textSize="18sp"
+                            android:textStyle="normal"
+                            android:textColor="@color/gray"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_marginTop="12dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="start"
+                        android:text="ghtexhub@gmail.com"
+                        android:textColor="@color/dark_blue"
+                        android:textSize="20sp"
+                        android:padding="2dp"
+                        android:textStyle="normal"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <!--<View
+                android:background="#c0c0c0"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"/>-->
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_marginTop="12dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="start"
+                        android:text="SURAT"
+                        android:textColor="@color/darkblack"
+                        android:textSize="20sp"
+                        android:padding="2dp"
+                        android:textStyle="bold"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:padding="2dp"
+                        android:text="@string/surat_contact_address"
+                        android:textSize="18sp"
+                        android:textStyle="normal"
+                        android:textColor="@color/gray"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_marginTop="12dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="start"
+                        android:text="Marketing department:"
+                        android:textColor="@color/darkblack"
+                        android:textSize="20sp"
+                        android:padding="2dp"
+                        android:textStyle="normal"/>
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="2dp">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="2dp"
+                            android:text="Chandan Singh "
+                            android:textSize="18sp"
+                            android:textStyle="normal"
+                            android:textColor="@color/gray"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="2dp"
+                            android:text=" - "
+                            android:textSize="18sp"
+                            android:textStyle="normal"
+                            android:textColor="@color/gray"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="2dp"
+                            android:layout_marginStart="4dp"
+                            android:text="7567221695"
+                            android:textSize="18sp"
+                            android:textStyle="normal"
+                            android:textColor="@color/gray"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="2dp"
+                            android:text="Harshad  "
+                            android:textSize="18sp"
+                            android:textStyle="normal"
+                            android:textColor="@color/gray"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="2dp"
+                            android:text=" - "
+                            android:textSize="18sp"
+                            android:textStyle="normal"
+                            android:textColor="@color/gray"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="2dp"
+                            android:layout_marginStart="4dp"
+                            android:text="9913716910"
+                            android:textSize="18sp"
+                            android:textStyle="normal"
+                            android:textColor="@color/gray"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="2dp"
+                            android:text="Mukesh "
+                            android:textSize="18sp"
+                            android:textStyle="normal"
+                            android:textColor="@color/gray"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="2dp"
+                            android:text=" - "
+                            android:textSize="18sp"
+                            android:textStyle="normal"
+                            android:textColor="@color/gray"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="2dp"
+                            android:layout_marginStart="4dp"
+                            android:text="9512914949"
+                            android:textSize="18sp"
+                            android:textStyle="normal"
+                            android:textColor="@color/gray"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_marginTop="12dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="start"
+                        android:text="Accounts department:"
+                        android:textColor="@color/darkblack"
+                        android:textSize="20sp"
+                        android:padding="2dp"
+                        android:textStyle="normal"/>
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="2dp">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="2dp"
+                            android:text="Kiran "
+                            android:textSize="18sp"
+                            android:textStyle="normal"
+                            android:textColor="@color/gray"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="2dp"
+                            android:text=" - "
+                            android:textSize="18sp"
+                            android:textStyle="normal"
+                            android:textColor="@color/gray"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="2dp"
+                            android:layout_marginStart="4dp"
+                            android:text="9512974949"
+                            android:textSize="18sp"
+                            android:textStyle="normal"
+                            android:textColor="@color/gray"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_marginTop="12dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="start"
+                        android:text="ghenterprisesinc.surat02@gmail.com"
+                        android:textColor="@color/dark_blue"
+                        android:textSize="20sp"
+                        android:padding="2dp"
+                        android:textStyle="normal"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <!--<View
+                android:background="#c0c0c0"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"/>-->
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_marginTop="12dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="start"
+                        android:text="TIRUPPUR"
+                        android:textColor="@color/darkblack"
+                        android:textSize="20sp"
+                        android:padding="2dp"
+                        android:textStyle="bold"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:padding="2dp"
+                        android:text="@string/tirupur_contact_address"
+                        android:textSize="18sp"
+                        android:textStyle="normal"
+                        android:textColor="@color/gray"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_marginTop="12dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="start"
+                        android:text="Marketing department:"
+                        android:textColor="@color/darkblack"
+                        android:textSize="20sp"
+                        android:padding="2dp"
+                        android:textStyle="normal"/>
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="2dp">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="2dp"
+                            android:text="Harish "
+                            android:textSize="18sp"
+                            android:textStyle="normal"
+                            android:textColor="@color/gray"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="2dp"
+                            android:text=" - "
+                            android:textSize="18sp"
+                            android:textStyle="normal"
+                            android:textColor="@color/gray"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="2dp"
+                            android:layout_marginStart="4dp"
+                            android:text="9384019735"
+                            android:textSize="18sp"
+                            android:textStyle="normal"
+                            android:textColor="@color/gray"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="2dp"
+                            android:text="Ranjit "
+                            android:textSize="18sp"
+                            android:textStyle="normal"
+                            android:textColor="@color/gray"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="2dp"
+                            android:text=" - "
+                            android:textSize="18sp"
+                            android:textStyle="normal"
+                            android:textColor="@color/gray"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="2dp"
+                            android:layout_marginStart="4dp"
+                            android:text="9384019731"
+                            android:textSize="18sp"
+                            android:textStyle="normal"
+                            android:textColor="@color/gray"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_marginTop="12dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="start"
+                        android:text="Accounts department:"
+                        android:textColor="@color/darkblack"
+                        android:textSize="20sp"
+                        android:padding="2dp"
+                        android:textStyle="normal"/>
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="2dp">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="2dp"
+                            android:text="Dilip "
+                            android:textSize="18sp"
+                            android:textStyle="normal"
+                            android:textColor="@color/gray"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="2dp"
+                            android:text=" - "
+                            android:textSize="18sp"
+                            android:textStyle="normal"
+                            android:textColor="@color/gray"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="2dp"
+                            android:layout_marginStart="4dp"
+                            android:text="9384019740"
+                            android:textSize="18sp"
+                            android:textStyle="normal"
+                            android:textColor="@color/gray"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="2dp">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="2dp"
+                            android:text="Suresh "
+                            android:textSize="18sp"
+                            android:textStyle="normal"
+                            android:textColor="@color/gray"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="2dp"
+                            android:text=" - "
+                            android:textSize="18sp"
+                            android:textStyle="normal"
+                            android:textColor="@color/gray"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="2dp"
+                            android:layout_marginStart="4dp"
+                            android:text="7708245839"
+                            android:textSize="18sp"
+                            android:textStyle="normal"
+                            android:textColor="@color/gray"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_marginTop="12dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="start"
+                        android:text="billing.ghtexhubtpr@gmail.com"
+                        android:textColor="@color/dark_blue"
+                        android:textSize="20sp"
+                        android:padding="2dp"
+                        android:textStyle="normal"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <!--<View
+                android:background="#c0c0c0"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"/>-->
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_marginTop="12dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="start"
+                        android:text="ULLASNAGAR"
+                        android:textColor="@color/darkblack"
+                        android:textSize="20sp"
+                        android:padding="2dp"
+                        android:textStyle="bold"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:padding="2dp"
+                        android:text="@string/ulhasnagar_contact_address"
+                        android:textSize="18sp"
+                        android:textStyle="normal"
+                        android:textColor="@color/gray"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_marginTop="12dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="start"
+                        android:text="Marketing department:"
+                        android:textColor="@color/darkblack"
+                        android:textSize="20sp"
+                        android:padding="2dp"
+                        android:textStyle="normal"/>
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="2dp">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="2dp"
+                            android:text="Deva "
+                            android:textSize="18sp"
+                            android:textStyle="normal"
+                            android:textColor="@color/gray"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="2dp"
+                            android:text=" - "
+                            android:textSize="18sp"
+                            android:textStyle="normal"
+                            android:textColor="@color/gray"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="2dp"
+                            android:layout_marginStart="4dp"
+                            android:text="9321168002"
+                            android:textSize="18sp"
+                            android:textStyle="normal"
+                            android:textColor="@color/gray"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="2dp"
+                            android:text="Anil "
+                            android:textSize="18sp"
+                            android:textStyle="normal"
+                            android:textColor="@color/gray"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="2dp"
+                            android:text=" - "
+                            android:textSize="18sp"
+                            android:textStyle="normal"
+                            android:textColor="@color/gray"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="2dp"
+                            android:layout_marginStart="4dp"
+                            android:text="7506652141"
+                            android:textSize="18sp"
+                            android:textStyle="normal"
+                            android:textColor="@color/gray"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_marginTop="12dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="start"
+                        android:text="Accounts department:"
+                        android:textColor="@color/darkblack"
+                        android:textSize="20sp"
+                        android:padding="2dp"
+                        android:textStyle="normal"/>
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="2dp">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="2dp"
+                            android:text="Pranali "
+                            android:textSize="18sp"
+                            android:textStyle="normal"
+                            android:textColor="@color/gray"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="2dp"
+                            android:text=" - "
+                            android:textSize="18sp"
+                            android:textStyle="normal"
+                            android:textColor="@color/gray"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="2dp"
+                            android:layout_marginStart="4dp"
+                            android:text="7710088403"
+                            android:textSize="18sp"
+                            android:textStyle="normal"
+                            android:textColor="@color/gray"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="2dp">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="2dp"
+                            android:text="Deva "
+                            android:textSize="18sp"
+                            android:textStyle="normal"
+                            android:textColor="@color/gray"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="2dp"
+                            android:text=" - "
+                            android:textSize="18sp"
+                            android:textStyle="normal"
+                            android:textColor="@color/gray"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="2dp"
+                            android:layout_marginStart="4dp"
+                            android:text="9321168002"
+                            android:textSize="18sp"
+                            android:textStyle="normal"
+                            android:textColor="@color/gray"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_marginTop="12dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="start"
+                        android:text="ghulhasnagar@gmail.com"
+                        android:textColor="@color/dark_blue"
+                        android:textSize="20sp"
+                        android:padding="2dp"
+                        android:textStyle="normal"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_marginTop="12dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="start"
+                        android:text="GH PANIPAT"
+                        android:textColor="@color/darkblack"
+                        android:textSize="20sp"
+                        android:padding="2dp"
+                        android:textStyle="bold"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:padding="2dp"
+                        android:text="@string/panipat_contact_address"
+                        android:textSize="18sp"
+                        android:textStyle="normal"
+                        android:textColor="@color/darkblack"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:visibility="gone"
+                    android:orientation="vertical"
+                    android:layout_marginTop="12dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="start"
+                        android:text="Marketing department:"
+                        android:textColor="@color/darkblack"
+                        android:textSize="20sp"
+                        android:padding="2dp"
+                        android:textStyle="normal"/>
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="2dp">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="2dp"
+                            android:text="Gorishankar"
+                            android:textSize="18sp"
+                            android:textStyle="normal"
+                            android:textColor="@color/gray"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="2dp"
+                            android:text=" - "
+                            android:textSize="18sp"
+                            android:textStyle="normal"
+                            android:textColor="@color/gray"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="2dp"
+                            android:layout_marginStart="4dp"
+                            android:text="9978634499"
+                            android:textSize="18sp"
+                            android:textStyle="normal"
+                            android:textColor="@color/gray"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="2dp"
+                            android:text="Mahaveer"
+                            android:textSize="18sp"
+                            android:textStyle="normal"
+                            android:textColor="@color/gray"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="2dp"
+                            android:text=" - "
+                            android:textSize="18sp"
+                            android:textStyle="normal"
+                            android:textColor="@color/gray"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="2dp"
+                            android:layout_marginStart="4dp"
+                            android:text="9913444907"
+                            android:textSize="18sp"
+                            android:textStyle="normal"
+                            android:textColor="@color/gray"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:visibility="gone"
+                    android:orientation="vertical"
+                    android:layout_marginTop="12dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="start"
+                        android:text="Accounts department:"
+                        android:textColor="@color/darkblack"
+                        android:textSize="20sp"
+                        android:padding="2dp"
+                        android:textStyle="normal"/>
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="2dp">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="2dp"
+                            android:text="Janvi"
+                            android:textSize="18sp"
+                            android:textStyle="normal"
+                            android:textColor="@color/gray"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="2dp"
+                            android:text=" - "
+                            android:textSize="18sp"
+                            android:textStyle="normal"
+                            android:textColor="@color/gray"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="2dp"
+                            android:layout_marginStart="4dp"
+                            android:text="9978683099"
+                            android:textSize="18sp"
+                            android:textStyle="normal"
+                            android:textColor="@color/gray"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="2dp"
+                            android:text="Romil"
+                            android:textSize="18sp"
+                            android:textStyle="normal"
+                            android:textColor="@color/gray"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="2dp"
+                            android:text=" - "
+                            android:textSize="18sp"
+                            android:textStyle="normal"
+                            android:textColor="@color/gray"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="2dp"
+                            android:layout_marginStart="4dp"
+                            android:text="9978683499"
+                            android:textSize="18sp"
+                            android:textStyle="normal"
+                            android:textColor="@color/gray"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_marginTop="12dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="start"
+                        android:text="ghtextilesandsareespanipat@gmail.com"
+                        android:textColor="@color/dark_blue"
+                        android:textSize="20sp"
+                        android:padding="2dp"
+                        android:textStyle="normal"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    </LinearLayout>
+
+</LinearLayout>

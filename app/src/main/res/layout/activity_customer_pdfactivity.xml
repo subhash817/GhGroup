@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".activity.CustomerPdf">
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:id="@+id/headerScrollCustomer"
+            android:layout_height="@dimen/header_height">
+
+            <LinearLayout android:orientation="horizontal"
+                android:background="@color/sky"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="@dimen/cell_width"
+                    android:id="@+id/txtVchrType"
+                    android:textStyle="normal"
+                    android:layout_marginStart="@dimen/margin"
+                    android:text="Vchr Type"
+                    android:textAllCaps="false"
+                    android:gravity="center|start"
+                    android:textColor="@android:color/white"
+                    android:layout_height="match_parent"/>
+
+                <TextView
+                    android:layout_width="@dimen/cell_width"
+                    android:id="@+id/txtDate"
+                    android:textStyle="normal"
+                    android:layout_marginStart="@dimen/margin"
+                    android:text="Date"
+                    android:textAllCaps="false"
+                    android:gravity="center|start"
+                    android:textColor="@android:color/white"
+                    android:layout_height="match_parent"/>
+
+                <TextView
+                    android:layout_width="@dimen/cell_width"
+                    android:id="@+id/txtvchrNumber"
+                    android:textStyle="normal"
+                    android:layout_marginStart="@dimen/margin"
+                    android:gravity="center|start"
+                    android:text="Vchr Number"
+                    android:textAllCaps="false"
+                    android:textColor="@android:color/white"
+                    android:layout_height="match_parent"/>
+
+                <TextView
+                    android:layout_width="@dimen/cell_width"
+                    android:id="@+id/txtBranch"
+                    android:gravity="center|start"
+                    android:layout_marginStart="@dimen/margin"
+                    android:textStyle="normal"
+                    android:text="Branch"
+                    android:textAllCaps="false"
+                    android:textColor="@android:color/white"
+                    android:layout_height="match_parent"/>
+
+                <TextView
+                    android:layout_width="@dimen/cell_width"
+                    android:id="@+id/txtDebit"
+                    android:textStyle="normal"
+                    android:layout_marginStart="@dimen/margin"
+                    android:gravity="center|start"
+                    android:text="Debit"
+                    android:textAllCaps="false"
+                    android:textColor="@android:color/white"
+                    android:layout_height="match_parent"/>
+
+                <TextView
+                    android:layout_width="@dimen/cell_width"
+                    android:id="@+id/txtCredit"
+                    android:gravity="center|start"
+                    android:textStyle="normal"
+                    android:layout_marginStart="@dimen/margin"
+                    android:text="Credit"
+                    android:textAllCaps="false"
+                    android:textColor="@android:color/white"
+                    android:layout_height="match_parent"/>
+
+                <TextView
+                    android:layout_width="@dimen/cell_width"
+                    android:id="@+id/txtVendorName"
+                    android:gravity="center|start"
+                    android:textStyle="normal"
+                    android:layout_marginStart="@dimen/margin"
+                    android:text="Vendor Name"
+                    android:textAllCaps="false"
+                    android:textColor="@android:color/white"
+                    android:layout_height="match_parent"/>
+
+                <TextView
+                    android:layout_width="@dimen/cell_width"
+                    android:id="@+id/txtlrNo"
+                    android:gravity="center|start"
+                    android:textStyle="normal"
+                    android:layout_marginStart="@dimen/margin"
+                    android:text="LR No"
+                    android:textAllCaps="false"
+                    android:textColor="@android:color/white"
+                    android:layout_height="match_parent"/>
+
+                <TextView
+                    android:layout_width="@dimen/cell_width"
+                    android:id="@+id/txtTransName"
+                    android:gravity="center|start"
+                    android:textStyle="normal"
+                    android:layout_marginStart="@dimen/margin"
+                    android:text="Trans Name"
+                    android:textAllCaps="false"
+                    android:textColor="@android:color/white"
+                    android:layout_height="match_parent"/>
+
+                <TextView
+                    android:layout_width="@dimen/cell_width"
+                    android:id="@+id/txtlrDate"
+                    android:gravity="center|start"
+                    android:textStyle="normal"
+                    android:layout_marginStart="@dimen/margin"
+                    android:text="LR Date"
+                    android:textAllCaps="false"
+                    android:textColor="@android:color/white"
+                    android:layout_height="match_parent"/>
+
+                <TextView
+                    android:layout_width="@dimen/cell_width"
+                    android:id="@+id/txtNo_of_parcels"
+                    android:gravity="center|start"
+                    android:textStyle="normal"
+                    android:layout_marginStart="@dimen/margin"
+                    android:text="No of Parcels"
+                    android:textAllCaps="false"
+                    android:textColor="@android:color/white"
+                    android:layout_height="match_parent"/>
+
+            </LinearLayout>
+
+        </HorizontalScrollView>
+
+        <LinearLayout
+            android:id="@+id/rv_pdf_excel_form"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:id="@+id/rvCustPdf"
+                android:layout_height="match_parent">
+
+            </androidx.recyclerview.widget.RecyclerView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="@string/pdf"/>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="@string/excel"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+</layout>

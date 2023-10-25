@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#21cad6</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#000000</color>
+    <color name="black1">#747575</color>
+    <color name="darkblack">#000000</color>
+    <color name="white">#fefefe</color>
+    <color name="sky">#21cad6</color>
+    <color name="gray">#000000</color>
+    <!--<color name="gray1">#808181</color>-->
+    <color name="gray1">#a6a6a6</color>
+    <color name="light_gray">#E6E5E5</color>
+    <color name="red">#FF0000</color>
+    <!--<color name="green">#408246</color>
+    <color name="dark_green">#408246</color>-->
+    <color name="green">#145940</color>
+    <color name="dark_green">#145940</color>
+    <!--<color name="dark_blue">#1E5983</color>-->
+    <color name="dark_blue">#283a84</color>
+    <color name="light_sky">#DEEEFA</color>
+    <!--<color name="gray_color">#D2D1D0</color>-->
+    <color name="gray_color">#a6a6a6</color>
+    <color name="transparent_background">#00FF0000</color>
+    <color name="dark_red">#8B0000</color>
+
+    <color name="Grey">#a6a6a6</color>
+    <color name="Green">#145940</color>
+    <color name="Blue">#283a84</color>
+    <color name="White">#fefefe</color>
+    <color name="Black">#000000</color>
+
+</resources>
